@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary: #172b4d;
+  --h-color: #3a4a42;
+  --secondary: #36b37f;
+  --weight: bold;
+  --white: #ffff;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('../images/header-illsutration-mobile@2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 375px;
+  height: calc(48px + 10px);
+  padding: 24px;
+}
+
+nav .menu-btn {
+  width: 20px;
+}
