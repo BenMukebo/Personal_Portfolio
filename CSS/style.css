@@ -33,7 +33,9 @@ body {
 }
 
 nav .menu-btn {
-  width: 20px;
+  width: 22px;
+  height: 16px;
+  font-weight: var(--weight);
 }
 
 main {
@@ -51,16 +53,16 @@ main {
 
 .main-section-title h1 {
   color: var(--primary);
-  font-size: 40px;
+  font-size: 44px;
   font-weight: var(--weight);
-  line-height: 52px;
+  line-height: 54px;
 }
 
 .main-section-title h2 {
   color: var(--secondary);
-  font-size: 40px;
+  font-size: 44px;
   font-weight: var(--weight);
-  line-height: 52px;
+  line-height: 54px;
 }
 
 .main-section p {
