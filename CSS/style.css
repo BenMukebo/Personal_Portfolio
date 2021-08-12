@@ -35,3 +35,51 @@ body {
 nav .menu-btn {
   width: 20px;
 }
+
+main {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.main-section {
+  min-width: 327px;
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 64px 24px 0;
+}
+
+.main-section-title h1 {
+  color: var(--primary);
+  font-size: 40px;
+  font-weight: var(--weight);
+  line-height: 52px;
+}
+
+.main-section-title h2 {
+  color: var(--secondary);
+  font-size: 40px;
+  font-weight: var(--weight);
+  line-height: 52px;
+}
+
+.main-section p {
+  margin: 58px 0 60px;
+  color: var(--primary);
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-media-icons li {
+  padding: 0 20px;
+}
+
+.scroll-down-icon {
+  margin: 64px 0 22px;
+}
