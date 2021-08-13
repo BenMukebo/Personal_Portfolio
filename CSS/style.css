@@ -87,7 +87,7 @@ main {
   margin: 64px 0 22px;
 }
 
-/* Middle-section */ 
+/* Works section */ 
 
 .works-section {
   padding: 0 24px;
@@ -109,6 +109,7 @@ main {
   /* background-color: brown; */
   /* margin-bottom: calc(24px + 62px); */
 }
+
 .works-section-title h2::after {
   content: " ";
   display: block;
@@ -117,6 +118,7 @@ main {
   margin: 24px auto 62px;
   background-color: var(--secondary);
 }
+
 .card-container {
   display: grid;
   width: auto;
@@ -129,6 +131,7 @@ main {
   /* margin: 0 auto; */
   /* background-color: rgb(180, 180, 180); */
 }
+
 .card {
   min-width: 327px;
   width: 90%;
@@ -141,7 +144,6 @@ main {
   /* justify-content: center; */
   /* background-color: #75867f; */
   align-items: center;
-  
 }
 
 .card img {
@@ -196,5 +198,5 @@ main {
   background-color: var(--secondary-btn);
 }
 
-/* Middle-section */ 
+/* About myself */ 
 
