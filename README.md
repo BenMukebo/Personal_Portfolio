@@ -8,18 +8,26 @@
 
 ![screenshot](./images/screenshot.png)
 
-> The goal for this project is to: 
+> The main goal for this project is to: 
 
 - Understand how to parse a Figma design to create a UI.
-- Flexbox to place elements in the page.
-- Build a personal portfolio site.
+- Flexbox to place elements on the page.
+- Use CSS Grid to place elements on the page.
 - Use images and backgrounds to enhance the look of the website.
+- Build a personal portfolio site.
 
 ## Built With
 
 - HTML
 - CSS
-- CSS Flex-box
+- CSS Flexbox
+- CSS CSS Grid
+- Git & GitHub
+
+
+## Live Demo
+
+[Live Demo Link](https://benmukebo.github.io/Personal_Portfolio/)
 
 ## Getting Started
 
@@ -39,7 +47,7 @@ For tracking linter errors locally you need to follow these steps:
 
 - After cloning the project you need to run this command
   > npm install
-  > This command will download all the dependancies of the project
+  > This command will download all the dependencies of the project
 
 - For tracking the linter errors in HTML file run:
   > npx hint .
@@ -68,8 +76,13 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks to Microvers and all the team that help with the template of this project
-- etc
+- Hat tip to Figma for their templates
+- Hat tip to [Microvers](www.microverse.org) curriculum and all the team 
+- Thanks to Code Reviewers
+- Thanks to My coding Partners 
+- Thanks to My Morning-session-group Partners and
+- Thanks to My standup-team Partners
+  
 
 ## 📝 License
 
