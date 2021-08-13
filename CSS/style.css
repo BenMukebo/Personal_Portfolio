@@ -162,8 +162,8 @@ main {
   list-style-type: none;
 }
 
-.card ul li {
-  max-height: 32px;
+.card .program-lang li {
+  height: 32px;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
