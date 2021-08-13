@@ -21,7 +21,8 @@ body {
   background-size: contain;
   background-position: center top;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden; 
+  overflow-x: hidden;
+
 }
 
 .main-header {
@@ -97,8 +98,7 @@ main {
 }
 
 .works-section-title h2 {
-  min-width: 327px;
-  width: 327;
+  max-width: 327;
   margin: 0 auto;
   font-size: 40px;
   color: var(--primary);
@@ -178,7 +178,7 @@ main {
   padding: 12px;
   font-size: 17px;
   line-height: 24px;
-  font-weight: medium;
+  font-weight: 500;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -277,7 +277,7 @@ main {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  letter-spacing: 0em;
+  letter-spacing: 0.4px;
   color: #344563;
   margin-bottom: 24px;
 }
