@@ -267,8 +267,8 @@ main ul {
 }
 
 .card-wrapper .cards {
-  max-width: 327px;
   width: 327px;
+  /* max-width: 327px; */
   height: 352px;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
