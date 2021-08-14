@@ -202,6 +202,10 @@ main {
 }
 
 .about h2 {
+  background-image: url('../images/Mask\ Group@2x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
   min-width: 100%;
   margin: 0 auto;
   padding: 68px 0 48px;
@@ -209,10 +213,6 @@ main {
   line-height: 52px;
   font-weight: var(--weight);
   color: var(--primary);
-  background-image: url('../images/Mask\ Group@2x.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
 }
 
 .about p {
@@ -255,7 +255,7 @@ main {
 }
 
 .card-wrapper .cards {
-  min-width: 327px;
+  max-width: 327px;
   height: 352px;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
