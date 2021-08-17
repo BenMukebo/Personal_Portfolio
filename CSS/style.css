@@ -26,7 +26,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-image: url('../images/header-illsutration-mobile@2x.png');
+  background-image: url("../images/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -53,7 +53,7 @@ main {
   min-height: 100%;
 }
 
-main ul {
+ul {
   list-style: none;
 }
 
@@ -202,7 +202,7 @@ button:active {
   flex-direction: column;
   text-align: center;
   width: 99%;
-  background-image: url('../images/Group\ 1.png');
+  background-image: url("../images/Group\ 1.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -230,7 +230,8 @@ button:active {
   padding: 0 28px 24px;
 }
 
-.about button {
+.about button,
+.footer-btn {
   height: 48px;
   width: 159px;
   font-size: 17px;
@@ -245,7 +246,15 @@ button:active {
   margin-bottom: 10px;
 }
 
-.about button:active {
+.about button:hover,
+.footer-btn:hover {
+  background: #36b37f;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+
+.about button:active,
+.footer-btn:active {
   background-color: #008552;
 }
 
@@ -298,14 +307,43 @@ button:active {
 
 .contact-form-section {
   flex-direction: column;
+  justify-content: space-around;
   text-align: center;
 }
 
-.contact-form-section h2{
+.form-sub-container {
   width: 327px;
-  padding: 0px 24px 58px;
+}
+
+.contact-form-section h2 {
+  width: 100%;
+  padding: 0 0 58px;
   color: var(--primary);
   font-weight: var(--weight);
   font-size: 40px;
-  line-height: 52px
+  line-height: 52px;
+}
+.contact-form-section input {
+  height: 2em;
+}
+
+.contact-form-section input,
+textarea {
+  margin-bottom: 1em;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding-left: 0.5em;
+  width: 100%;
+}
+
+.footer {
+  
+}
+
+.footer-btn {
+  margin-bottom: 3em;
+}
+
+.mail-container {
+  margin: 3em 0;
 }
