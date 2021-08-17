@@ -207,7 +207,7 @@ button:active {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
-  padding-top:calc(68px + 15px);
+  padding-top: calc(68px + 15px);
   padding-bottom: 15px;
 }
 
@@ -333,14 +333,12 @@ footer {
   width: 100%;
 }
 
-
 footer .social-media-icons {
   margin: 46px 0 19px;
 }
 
 footer .mail-container {
   margin-bottom: 147px;
-
 }
 
 footer .mail-container a {
@@ -350,7 +348,7 @@ footer .mail-container a {
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
-  letter-spacing: 0em;
+  letter-spacing: 0.4px;
 }
 
 .form-sub-container::after {
@@ -362,4 +360,3 @@ footer .mail-container a {
   margin: 0 auto 10px;
   background: var(--primary);
 }
-
