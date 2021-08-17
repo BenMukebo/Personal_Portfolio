@@ -295,3 +295,17 @@ button:active {
   background: #fff;
   border-radius: 8px;
 }
+
+.contact-form-section {
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-form-section h2{
+  width: 327px;
+  padding: 0px 24px 58px;
+  color: var(--primary);
+  font-weight: var(--weight);
+  font-size: 40px;
+  line-height: 52px
+}
