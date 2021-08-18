@@ -14,6 +14,8 @@
 - Flexbox to place elements on the page.
 - Use CSS Grid to place elements on the page.
 - Use images and backgrounds to enhance the look of the website.
+- Create forms with HTML5 validations.
+- Understand how to create UIs adaptable to different screen sizes using media queries.
 - Build a personal portfolio site.
 
 ## Built With
