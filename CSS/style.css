@@ -23,10 +23,17 @@
   justify-content: center;
 }
 
+.h2-size {
+  color: var(--primary);
+  font-size: 40px;
+  font-weight: var(--weight);
+  line-height: 52px;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
-  background-image: url('../images/header-illsutration-mobile@2x.png');
+  background-image: url("../images/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -53,7 +60,7 @@ main {
   min-height: 100%;
 }
 
-main ul {
+ul {
   list-style: none;
 }
 
@@ -74,9 +81,6 @@ main ul {
 
 .main-section-title h2 {
   color: var(--secondary);
-  font-size: 44px;
-  font-weight: var(--weight);
-  line-height: 54px;
 }
 
 .main-section p {
@@ -104,10 +108,6 @@ main ul {
 .works-section-title h2 {
   max-width: 70%;
   margin: 0 auto;
-  font-size: 40px;
-  color: var(--primary);
-  font-weight: var(--weight);
-  line-height: 52px;
 }
 
 .works-section-title h2::after {
@@ -121,7 +121,7 @@ main ul {
 
 .card-container {
   display: grid;
-  width: auto;
+  width: 100%;
   grid-gap: 24px;
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: minmax(474px, auto);
@@ -184,10 +184,12 @@ main ul {
   border: none;
   border-radius: 4px;
   background-color: var(--secondary-btn);
+  cursor: pointer;
 }
 
 button:hover {
   background-color: var(--secondary-btn);
+  box-shadow: 10px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 button:active {
@@ -201,22 +203,19 @@ button:active {
 .about-section .about {
   flex-direction: column;
   text-align: center;
-  width: 99%;
-  background-image: url('../images/Group\ 1.png');
+  width: 100%;
+  background-image: url("../images/Group\ 1.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: center center;
-  padding-top: 68px;
+  padding-top: calc(68px + 15px);
+  padding-bottom: 15px;
 }
 
 .about h2 {
   min-width: 99%;
   margin: 0 auto;
   padding-bottom: 48px;
-  font-size: 40px;
-  line-height: 52px;
-  font-weight: var(--weight);
-  color: var(--primary);
 }
 
 .about p {
@@ -230,7 +229,8 @@ button:active {
   padding: 0 28px 24px;
 }
 
-.about button {
+.about button,
+.contact-form-section button {
   height: 48px;
   width: 159px;
   font-size: 17px;
@@ -243,6 +243,7 @@ button:active {
   letter-spacing: 0.03em;
   padding: 12px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .about button:active {
@@ -250,7 +251,7 @@ button:active {
 }
 
 .card-wrapper {
-  margin-top: 49px;
+  margin-top: 39px;
   display: grid;
   width: auto;
   grid-gap: 24px;
@@ -294,4 +295,68 @@ button:active {
   color: var(--secondary);
   background: #fff;
   border-radius: 8px;
+}
+
+section.contact-form-section {
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-image: url("../images/illustration-contact-form@2x.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: right 98%;
+}
+
+.form-sub-container {
+  width: 80%;
+}
+
+.contact-form-section h2 {
+  width: 100%;
+  padding: 0 0 58px;
+}
+
+.contact-form-section input {
+  margin-bottom: 24px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 15px 16px;
+  width: 100%;
+}
+
+.contact-form-section textarea {
+  margin-bottom: 24px;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+}
+
+.icons-container .social-media-icons {
+  margin: 46px 0 19px;
+}
+
+footer .mail-container {
+  text-align: center;
+  margin-bottom: 147px;
+}
+
+footer .mail-container a {
+  margin: 3em 0 147px;
+  color: #42526e;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+}
+
+footer::after {
+  content: " ";
+  display: block;
+  width: 128px;
+  height: 5px;
+  border-radius: 2px;
+  margin: 0 auto 10px;
+  background: var(--primary);
 }
