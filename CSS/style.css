@@ -295,17 +295,14 @@ button:active {
   border-radius: 8px;
 }
 
-footer {
-  background-image: url("../images/illustration-contact-form@2x.png");
-  background-repeat: no-repeat;
-  background-size: 10%;
-  background-position: right 78%;
-}
-
-.contact-form-section {
+section.contact-form-section {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  background-image: url("../images/illustration-contact-form@2x.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: right 98%;
 }
 
 .form-sub-container {
@@ -333,11 +330,12 @@ footer {
   width: 100%;
 }
 
-footer .social-media-icons {
+.icons-container .social-media-icons {
   margin: 46px 0 19px;
 }
 
 footer .mail-container {
+  text-align: center;
   margin-bottom: 147px;
 }
 
@@ -351,7 +349,7 @@ footer .mail-container a {
   letter-spacing: 0.4px;
 }
 
-.form-sub-container::after {
+footer::after {
   content: " ";
   display: block;
   width: 128px;
