@@ -470,7 +470,11 @@ footer::after {
   .about-section {
     background: none;
     background: url("../images/illustration-about-me-2-desktop@2x.png") left 17% no-repeat,
+<<<<<<< HEAD
     url("../images/illustration-about\ me-1-desktop@2x.png") right 3%  no-repeat;
+=======
+     url("../images/illustration-about\ me-1-desktop@2x.png") right 3%  no-repeat;
+>>>>>>> d20e5145e636d1f7ace8ea5911defd497ad0652b
     background-size: 15%;
     padding-bottom: 164px;
   }
@@ -518,14 +522,23 @@ footer::after {
 
   .about-section {
     background: none;
+<<<<<<< HEAD
     background: 
     url("../images/illustration-about-me-2-desktop@2x.png") left 17% no-repeat,
     url("../images/illustration-about\ me-1-desktop@2x.png") right 3%  no-repeat;
+=======
+    background: url("../images/illustration-about-me-2-desktop@2x.png") left 17% no-repeat,
+     url("../images/illustration-about\ me-1-desktop@2x.png") right 3%  no-repeat;
+>>>>>>> d20e5145e636d1f7ace8ea5911defd497ad0652b
     background-size: 15%;
     padding-bottom: 164px;
   }
   
+<<<<<<< HEAD
   .about-section .about {
+=======
+  .about-section .about { 
+>>>>>>> d20e5145e636d1f7ace8ea5911defd497ad0652b
     width: 85%;
     margin: 0 auto;
     padding-top: calc(68px + 15px);
@@ -534,10 +547,17 @@ footer::after {
 
   section.contact-form-section {
     background-image: none;
+<<<<<<< HEAD
     background: 
     url("../images/illustration-1-contact-form-desktop@2x.png") left bottom no-repeat,
     url("../images/illustration-2-contact-form-desktop@2x.png") 30% bottom  no-repeat,
     url("../images/contact\ form-illustratoin-3-desktop@2x.png") right bottom  no-repeat;
+=======
+    background:
+     url("../images/illustration-1-contact-form-desktop@2x.png") left bottom no-repeat,
+     url("../images/illustration-2-contact-form-desktop@2x.png") 30% bottom  no-repeat,
+     url("../images/contact\ form-illustratoin-3-desktop@2x.png") right bottom  no-repeat;
+>>>>>>> d20e5145e636d1f7ace8ea5911defd497ad0652b
     background-size: 14%;
   }
 
