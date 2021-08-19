@@ -521,8 +521,8 @@ footer::after {
   }
 
   .about-section {
-    /* background-color: none;
-    background: url("../images/illustration-about-me-2-desktop@2x.png") left 17% no-repeat, url("../images/illustration-about\ me-1-desktop@2x.png") right 3%  no-repeat; */
+    background-color: none;
+    background: url("../images/illustration-about-me-2-desktop@2x.png") left 17% no-repeat, url("../images/illustration-about\ me-1-desktop@2x.png") right 3%  no-repeat;
     background-size: 15%;
     padding-bottom: 164px;
   }
@@ -535,11 +535,11 @@ footer::after {
   }
 
   section.contact-form-section {
-    /* background-image: none;
+    background-image: none;
     background: url("../images/illustration-1-contact-form-desktop@2x.png") left bottom no-repeat,
     url("../images/illustration-2-contact-form-desktop@2x.png") 30% bottom  no-repeat,
-    url("../images/contact\ form-illustratoin-3-desktop@2x.png") right bottom  no-repeat; */
-    /* background-size: 14%; */
+    url("../images/contact\ form-illustratoin-3-desktop@2x.png") right bottom  no-repeat;
+    background-size: 14%;
   }
 
   .form-sub-container {
