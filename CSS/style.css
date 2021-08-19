@@ -509,6 +509,56 @@ footer::after {
   }
 }
 
-
+@media screen and (min-width: 992px) {  
+  .card-container,
+  .card-wrapper {
+    width: calc(738px + 24px);
+  }
   
+  .card-container .card,
+  .card-wrapper .cards {
+    width: 369px;
+  }
 
+  .about-section {
+    /* background-color: none;
+    background: url("../images/illustration-about-me-2-desktop@2x.png") left 17% no-repeat, url("../images/illustration-about\ me-1-desktop@2x.png") right 3%  no-repeat; */
+    background-size: 15%;
+    padding-bottom: 164px;
+  }
+
+  .about-section .about { 
+    width: 85%;
+    margin: 0 auto;
+    padding-top: calc(68px + 15px);
+    padding-bottom: 52px;
+  }
+
+  section.contact-form-section {
+    /* background-image: none;
+    background: url("../images/illustration-1-contact-form-desktop@2x.png") left bottom no-repeat,
+    url("../images/illustration-2-contact-form-desktop@2x.png") 30% bottom  no-repeat,
+    url("../images/contact\ form-illustratoin-3-desktop@2x.png") right bottom  no-repeat; */
+    /* background-size: 14%; */
+  }
+
+  .form-sub-container {
+    width: 1029px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 490px;
+  }
+  
+  .contact-form-section h2 {
+    width: 463px;
+    font-size: 30px;
+    line-height: 48px;
+    margin-right: 24px;
+  }
+  .contact-form-section form {
+    width: 684px;
+  }
+}
+  
