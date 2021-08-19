@@ -562,3 +562,23 @@ footer::after {
   }
 }
   
+@media screen and (min-width: 1200px) {
+  .card-container,
+  .card-wrapper {
+    width: calc(981px + 48px);
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+  
+  .card-container .card,
+  .card-wrapper .cards {
+    width: 327px;
+    margin: 0 auto;
+  }
+    
+  .card-wrapper .cards:last-child {
+    grid-column: 3/span 1;
+  }
+
+}
