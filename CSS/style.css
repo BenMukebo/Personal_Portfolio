@@ -376,11 +376,10 @@ footer::after {
   .card-wrapper .cards {
     width: 369px;
   }
+
   .card-wrapper {
     padding: 0 24px;
-
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -421,7 +420,7 @@ footer::after {
   }
 
   .main-section {
-    padding-top: 180px;
+    padding-top: 170px;
     margin-top: 32px;
     background-image: url("../images/Header-llustration-desktop@2x.png");
     background-repeat: no-repeat;
@@ -431,7 +430,7 @@ footer::after {
 
   .main-section p {
     width: 70%;
-    margin: 24px auto;
+    margin: 24px auto 44px;
   }
   
   .social-media-icons li {
@@ -580,5 +579,4 @@ footer::after {
   .card-wrapper .cards:last-child {
     grid-column: 3/span 1;
   }
-
 }
