@@ -218,7 +218,7 @@ button:active {
   letter-spacing: 0.4px;
   font-weight: 400;
   color: #42526e;
-  padding: 0 24px 24px;
+  padding-bottom: 24px;
 }
 
 .about button,
@@ -300,7 +300,7 @@ section.contact-form-section {
 
 .form-sub-container {
   min-width: 307px;
-  max-width: 80%;
+  width: 80%;
 }
 
 .contact-form-section h2 {
@@ -468,8 +468,12 @@ footer::after {
     grid-column: 1/span 2;
   }
 
+  .about p {
+    width: calc(654px + 24px);
+  }
+
   .form-sub-container {
-    max-width: 80%;
+    width: calc(654px + 24px);
   }
 
   footer {
@@ -516,13 +520,18 @@ footer::after {
   }
 
   .about-section .about {
-    width: 85%;
+    width: calc(738px + 24px);
     margin: 0 auto;
     padding-top: calc(68px + 15px);
     padding-bottom: 52px;
   }
 
+  .about p {
+    width: 100%;
+  }
+
   section.contact-form-section {
+    width: 100%;
     background-image: none;
     background-image:
       url("../images/illustration-1-contact-form-desktop@2x.png"),
@@ -537,27 +546,27 @@ footer::after {
   }
 
   .form-sub-container {
-    width: 1029px;
+    width: calc(738px + 24px);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: left;
     height: 490px;
   }
 
   .contact-form-section h2 {
-    width: 463px;
+    width: 39%;
     font-size: 30px;
     line-height: 48px;
-    margin-right: 24px;
+    /* padding-right: 24px; */
   }
 
   .contact-form-section form {
-    width: 684px;
+    width: 58%;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .card-container,
   .card-wrapper {
     width: calc(981px + 48px);
@@ -574,5 +583,13 @@ footer::after {
 
   .card-wrapper .cards:last-child {
     grid-column: 3/span 1;
+  }
+
+  .about-section .about {
+    width: calc(981px + 48px);
+  }
+
+  .form-sub-container {
+    width: calc(981px + 48px);
   }
 }
