@@ -8,6 +8,10 @@
 
 ![screenshot](./images/screenshot.png)
 
+>  Desktop version screenshot.
+
+![screenshot](./images/screenshot2.png)
+
 > The main goal for this project is to: 
 
 - Understand how to parse a Figma design to create a UI.
@@ -15,7 +19,7 @@
 - Use CSS Grid to place elements on the page.
 - Use images and backgrounds to enhance the look of the website.
 - Create forms with HTML5 validations.
-- Understand how to create UIs adaptable to different screen sizes using media queries.
+- Understand how to create UIs adaptable to different screen sizes using Media Queries.
 - Build a personal portfolio site.
 
 ## Built With
