@@ -134,6 +134,11 @@ ul {
   justify-self: center;
   align-items: center;
   flex-flow: column nowrap;
+  transition: all 0.4s ease; 
+}
+
+.card-container .card:hover {
+  transform: scale(1.05);
 }
 
 .card h3 {
@@ -260,6 +265,11 @@ button:active {
   justify-self: center;
   flex-direction: column;
   background: var(--background);
+  transition: all 0.4s ease; 
+}
+
+.card-wrapper .cards:hover {
+  transform: scale(1.05);
 }
 
 .cards .tools-img {
