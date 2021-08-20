@@ -369,7 +369,7 @@ footer::after {
     max-width: 900px;
     letter-spacing: 0.8px;
   }
-  
+
   .card-container .card,
   .card-wrapper .cards {
     width: 369px;
@@ -394,7 +394,7 @@ footer::after {
   nav .menu-btn {
     display: none;
   }
-  
+
   nav .nav-menu {
     display: flex;
     justify-self: center;
@@ -431,7 +431,7 @@ footer::after {
     width: 70%;
     margin: 24px auto 44px;
   }
-  
+
   .social-media-icons li {
     padding: 0 20px;
   }
@@ -443,7 +443,7 @@ footer::after {
   .works-section-title h2::after {
     display: none;
   }
-  
+
   .scroll-down-icon {
     margin: 64px 0 245px;
   }
@@ -456,7 +456,7 @@ footer::after {
     margin: 0 auto;
     text-align: center;
   }
-  
+
   .card-container .card,
   .card-wrapper .cards {
     width: 327px;
@@ -467,7 +467,7 @@ footer::after {
   .card-wrapper .cards:last-child {
     grid-column: 1/span 2;
   }
-  
+
   .form-sub-container {
     max-width: 80%;
   }
@@ -498,7 +498,7 @@ footer::after {
   .card-wrapper {
     width: calc(738px + 24px);
   }
-  
+
   .card-container .card,
   .card-wrapper .cards {
     width: 369px;
@@ -514,7 +514,7 @@ footer::after {
     background-repeat: no-repeat;
     padding-bottom: 164px;
   }
-  
+
   .about-section .about {
     width: 85%;
     margin: 0 auto;
@@ -544,7 +544,7 @@ footer::after {
     text-align: left;
     height: 490px;
   }
-  
+
   .contact-form-section h2 {
     width: 463px;
     font-size: 30px;
@@ -565,7 +565,7 @@ footer::after {
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
   }
-  
+
   .card-container .card,
   .card-wrapper .cards {
     width: 327px;
