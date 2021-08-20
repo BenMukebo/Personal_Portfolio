@@ -420,6 +420,7 @@ footer::after {
   .main-section {
     padding-top: 170px;
     margin-top: 32px;
+    background-image: none;
     background-image: url("../images/Header-llustration-desktop@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -466,19 +467,6 @@ footer::after {
   .card-wrapper .cards:last-child {
     grid-column: 1/span 2;
   }
-
-  .about-section {
-    background: none;
-    background: url("../images/illustration-about-me-2-desktop@2x.png") left 17% no-repeat,
-    url("../images/illustration-about\ me-1-desktop@2x.png") right 3%  no-repeat;
-    background-size: 15%;
-    padding-bottom: 164px;
-  }
-  
-  .about-section .about {
-    width: 85%;
-    margin: 0 auto;
-  }
   
   .form-sub-container {
     max-width: 80%;
@@ -517,11 +505,13 @@ footer::after {
   }
 
   .about-section {
-    background: none;
-    background: 
-    url("../images/illustration-about-me-2-desktop@2x.png") left 17% no-repeat,
-    url("../images/illustration-about\ me-1-desktop@2x.png") right 3%  no-repeat;
+    background-image: none;
+    background-image:
+      url("../images/illustration-about-me-2-desktop@2x.png"),
+      url("../images/illustration-about\ me-1-desktop@2x.png");
+    background-position: left 17%, right 3%;
     background-size: 15%;
+    background-repeat: no-repeat;
     padding-bottom: 164px;
   }
   
@@ -534,11 +524,16 @@ footer::after {
 
   section.contact-form-section {
     background-image: none;
-    background: 
-    url("../images/illustration-1-contact-form-desktop@2x.png") left bottom no-repeat,
-    url("../images/illustration-2-contact-form-desktop@2x.png") 30% bottom  no-repeat,
-    url("../images/contact\ form-illustratoin-3-desktop@2x.png") right bottom  no-repeat;
+    background-image:
+      url("../images/illustration-1-contact-form-desktop@2x.png"),
+      url("../images/illustration-2-contact-form-desktop@2x.png"),
+      url("../images/contact\ form-illustratoin-3-desktop@2x.png");
+    background-position:
+      left bottom,
+      30% bottom,
+      right bottom;
     background-size: 14%;
+    background-repeat: no-repeat;
   }
 
   .form-sub-container {
