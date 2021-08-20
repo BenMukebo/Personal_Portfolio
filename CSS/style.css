@@ -128,7 +128,7 @@ ul {
 
 .card-container .card {
   width: 327px;
-  height: 474px;
+  max-height: 474px;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   justify-self: center;
@@ -506,6 +506,7 @@ footer::after {
   .card-container .card,
   .card-wrapper .cards {
     width: 369px;
+    max-height: 474px;
   }
 
   .about-section {
