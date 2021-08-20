@@ -9,17 +9,22 @@
   <link rel="stylesheet" href="./CSS/style.css" />
 </head>
 <body>
-  <header class="main-header d-flex flex-center">
+  <header class="main-header d-flex">
     <h2>Welcome</h2>
-    <nav>
+    <nav class="d-flex">
+      <ul class="nav-menu d-flex flex-center">
+        <li><a href="#section-home">Portoflio</a></li>
+        <li><a href="#section-about">About</a></li>
+        <li><a href="#section-contact">Contact</a></li>
+      </ul>
       <!-- <i class="fa fa-bars fa-2x"></i> -->
       <img src="./images/icons/Union.png" class="menu-btn" alt="union">
     </nav>
   </header>
   <main class="container">
-      <section class="main-section">
+      <section class="main-section" id="section-home">
         <div class="main-section-title">
-          <h1 class="present">Hey there. I’m Mukebo</h1>
+          <h1 class="present h2-size">Hey there. I’m Mukebo.</h1>
           <h2 class="present h2-size">I’m a software developer</h2>
         </div>
         <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p> 
@@ -131,7 +136,7 @@
           </div>
         </div>
       </section>
-      <section class="about-section">
+      <section class="about-section" id="section-about">
         <div class="about d-flex flex-center">
           <h2 class="h2-size">About me</h2>
           <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
@@ -173,7 +178,7 @@
           </li>
         </ul>
       </section>
-      <section  class="contact-form-section d-flex flex-center">
+      <section  class="contact-form-section d-flex flex-center" id="section-contact">
         <div class="form-sub-container">
           <h2 class="h2-size">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
           <form action="https://formspree.io/f/xnqlovnj" method="post">
@@ -184,39 +189,29 @@
               <input type="email" id="mail" name="user_email" placeholder="Email-address" required>
             </div>
             <div>
-              <textarea id="msg" name="user_message" placeholder="Enter text here" rows="6" maxlength="500" required></textarea>
+              <textarea id="msg" name="user_message" placeholder="Enter text here" rows="5" maxlength="500" required></textarea>
             </div>
             <div>
               <button type="submit" class="footer-btn">Get in touch</button>
             </div>
           </form>
         </div>  
-        <div class="icons-container">
+        <div class="footer-icons">
           <ul class="social-media-icons d-flex flex-center">
             <li>
-              <a href="https://twitter.com/BenMukebo">
-                <img src="./images/icons/twitter.png" alt="twitter">
-              </a>
+              <a href="https://twitter.com/BenMukebo"><img src="./images/icons/twitter.png" alt="twitter"></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/kasongo-mukebo-ben-591720205/">
-                <img src="./images/icons/Linkedin-icon.png" alt="linkedin">
-              </a>
+              <a href="https://www.linkedin.com/in/kasongo-mukebo-ben-591720205/"><img src="./images/icons/Linkedin-icon.png" alt="linkedin"></a>
             </li>
             <li>
-                <a href="#">
-                    <img src="./images/icons/medium.png" alt="medium">
-                </a>
+              <a href="#"><img src="./images/icons/medium.png" alt="medium"></a>
             </li>
             <li>
-              <a href="https://github.com/BenMukebo">
-                <img src="./images/icons/github.png" alt="github">
-              </a>
+              <a href="https://github.com/BenMukebo"><img src="./images/icons/github.png" alt="github"></a>
             </li>
             <li>
-              <a href="#">
-                <img src="./images/icons/angellist.png" alt="angellist">
-              </a>
+              <a href="#"><img src="./images/icons/angellist.png" alt="angellist"></a>
             </li>
           </ul>
         </div>  
