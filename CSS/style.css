@@ -319,11 +319,17 @@ section.contact-form-section {
 
 .contact-form-section textarea {
   margin-bottom: 24px;
-  border: 1px solid #60c095;
   border-radius: 4px;
   padding: 12px;
   width: 100%;
   font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  border: none;
+  border: 1.3px solid #60c095;
+  outline: none;
 }
 
 .footer-icons {
