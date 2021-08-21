@@ -88,17 +88,25 @@ ul {
   line-height: 28px;
 }
 
-  .social-media-icons li a img {
-    padding: 0 15px;
-    margin: 5px 0;
-    transition: all .3s ease-in-out;
-    /* min-width: 100%; */
-    /* width: 10px; */
-  }
+.card img {
+  background: var(--background);
+  height: 250px;
+  min-width: 100%;
+}
 
-  .social-media-icons li a img:hover {
-    transform: scale(1.3);
-  }
+.social-media-icons li a img {
+  padding: 0 12px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+
+  /* min-width: 100%; */
+
+  /* width: 10px; */
+}
+
+.social-media-icons li a img:hover {
+  transform: scale(1.3);
+}
 
 .scroll-down-icon {
   margin: 64px 0 22px;
@@ -130,7 +138,8 @@ ul {
   width: 100%;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 24px;
-  grid-auto-rows: 474px;
+  grid-auto-rows: calc(474px + 20px);
+  padding: 0 10px;
   text-align: center;
 }
 
@@ -142,7 +151,7 @@ ul {
   justify-self: center;
   align-items: center;
   flex-flow: column nowrap;
-  transition: all 0.4s ease; 
+  transition: all 0.4s ease;
 }
 
 .card-container .card:hover {
@@ -155,12 +164,6 @@ ul {
   font-size: 24px;
   line-height: 32px;
   color: #3a4a42;
-}
-
-.card img {
-  background: var(--background);
-  height: 250px;
-  min-width: 100%;
 }
 
 .card ul,
@@ -194,13 +197,14 @@ ul {
   border: none;
   border-radius: 4px;
   background-color: var(--secondary-btn);
-  cursor: pointer;
+  transition: all 0.4s ease 0.2s;
 }
 
 button:hover {
   background-color: var(--secondary-btn);
+  cursor: pointer;
   box-shadow: 10px 8px 16px rgba(54, 179, 127, 0.24);
-  transform: translatey(-18px);
+  transform: translateY(-5px);
 }
 
 button:active {
@@ -235,6 +239,11 @@ button:active {
   padding-bottom: 24px;
 }
 
+.contact-form-section button {
+  margin-top: 7px;
+  transition: all 0.4s ease 0.2s;
+}
+
 .about button,
 .contact-form-section button {
   height: 48px;
@@ -249,7 +258,7 @@ button:active {
   letter-spacing: 0.03em;
   padding: 12px;
   margin-bottom: 10px;
-  cursor: pointer;
+  transition: all 0.4s ease 0.2s;
 }
 
 .about button:active {
@@ -262,7 +271,8 @@ button:active {
   display: grid;
   grid-gap: 24px;
   grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: 352px;
+  grid-auto-rows: calc(352px + 20px);
+  padding: 0 10px;
   text-align: center;
 }
 
@@ -274,7 +284,7 @@ button:active {
   justify-self: center;
   flex-direction: column;
   background: var(--background);
-  transition: all 0.4s ease; 
+  transition: all 0.4s ease;
 }
 
 .card-wrapper .cards:hover {
@@ -351,6 +361,12 @@ textarea:focus {
   outline: none;
 }
 
+input:hover::placeholder,
+textarea:hover::placeholder {
+  transition: 0.5s;
+  transform: translateX(10px);
+}
+
 .footer-icons {
   width: 100%;
   padding: 46px 0 19px;
@@ -381,18 +397,22 @@ footer::after {
   background: var(--primary);
 }
 
-@media screen and (min-width: 640px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media screen and (min-width: 600px) {
   .main-section-title h1,
   .main-section-title h2 {
-    font-size: 48px;
     font-weight: 800;
-    line-height: 60px;
     letter-spacing: 0.4px;
+
+    /* font-size: 48px; */
+
+    /* line-height: 60px; */
   }
 
   .main-section p {
     max-width: 900px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.6px;
   }
 
   .card-container .card,
@@ -404,6 +424,8 @@ footer::after {
     padding: 0 24px;
   }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
   header {
@@ -458,7 +480,7 @@ footer::after {
   }
 
   .social-media-icons li a img {
-    padding: 0 20px;
+    padding: 0 12px;
   }
 
   .works-section-title h2 {
@@ -518,16 +540,19 @@ footer::after {
     border-top: 1px solid #dfe1e6;
   }
 
-  .footer-icons ul li a img{
+  .footer-icons ul li a img {
     padding: 0 12px;
     width: 38px;
   }
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+
 @media screen and (min-width: 992px) {
   .card-container,
   .card-wrapper {
     width: calc(738px + 24px + 20px);
+
     /* padding: 0 10px; */
   }
 
@@ -594,10 +619,13 @@ footer::after {
   }
 }
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
 @media screen and (min-width: 1100px) {
   .card-container,
   .card-wrapper {
     width: calc(981px + 48px + 20px);
+
     /* padding: 0 10px; */
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
