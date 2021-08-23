@@ -6,7 +6,7 @@
 
 >  Mobile version screenshot.
 
-![screenshot](./images/screenshot.png)
+![screenshot](./images/screenshot.png/)
 
 >  Desktop version screenshot.
 
@@ -43,6 +43,8 @@ To get a local copy for this project and running follow these simple example ste
 ### Prerequisites
 
 - You need to have git installed in your machine.
+- A text editor or terminal
+- A web browser to view output
 
 ### Setup
 
