@@ -21,6 +21,9 @@
 - Create forms with HTML5 validations.
 - Understand how to create UIs adaptable to different screen sizes using Media Queries.
 - Understand the usefulness of transitions and animations.
+- Use GitHub Pages to deploy web pages.
+- Add Google Analytics to a webpage and use it to track activity on that page.
+- Changes regarding accessibility.
 - Build a personal portfolio site.
 
 ## Built With
