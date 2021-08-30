@@ -4,13 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-}
-
 :root {
   --primary: #172b4d;
   --h-color: #3a4a42;
@@ -18,6 +11,13 @@ html {
   --secondary-btn: #36b37f;
   --weight: bold;
   --background: #ebf0ee;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .d-flex {
@@ -40,6 +40,7 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -54,10 +55,21 @@ nav .nav-menu {
   display: none;
 }
 
+footer .mail-container a {
+  margin: 3em 0 147px;
+  color: #42526e;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+}
+
 nav .nav-menu.open {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
   position: fixed;
   top: 0;
   left: 0;
@@ -66,22 +78,23 @@ nav .nav-menu.open {
   width: 100%;
   height: 100%;
   padding-left: 28px;
+  padding-top: 62px;
   background-color: #fff;
 }
 
-nav .nav-menu.open li {
+nav .nav-menu.open .nav-link {
   font-size: 32px;
   line-height: 44px;
   font-weight: 600;
   margin: 12px;
 }
 
-nav .nav-menu.open li a {
+nav .nav-menu.open .nav-link a {
   text-decoration: none;
   color: var(--h-color);
 }
 
-nav .menu-btn {
+nav .show-menu-btn {
   width: 22px;
   height: 16px;
   font-weight: var(--weight);
@@ -90,9 +103,9 @@ nav .menu-btn {
 nav .closed-menu-btn {
   display: none;
   position: fixed;
-  top: 24px;
-  right: 24px;
-  z-index: 3;
+  top: 38px;
+  right: 38px;
+  z-index: 2;
 }
 
 main {
@@ -443,16 +456,6 @@ footer .mail-container {
   margin-bottom: 147px;
 }
 
-footer .mail-container a {
-  margin: 3em 0 147px;
-  color: #42526e;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0.4px;
-}
-
 footer::after {
   content: " ";
   display: block;
@@ -505,7 +508,7 @@ footer::after {
   }
 
   header h2,
-  nav .menu-btn {
+  nav .show-menu-btn {
     display: none;
   }
 
@@ -527,7 +530,7 @@ footer::after {
     transition: all 0.5s ease-in-out;
   }
 
-  .nav-menu .nav-link:last-child a {
+  .nav-menu .nav-link:first-child a {
     color: #008552;
   }
 
@@ -565,7 +568,7 @@ footer::after {
   }
 
   .works-section-title h2 {
-    padding: 40px 0 32px;
+    padding: 80px 0 32px;
   }
 
   .works-section-title h2::after {
@@ -598,11 +601,12 @@ footer::after {
   }
 
   .about p {
-    width: calc(654px + 24px);
+    width: calc(654px - 24px);
   }
 
   .form-sub-container {
     width: calc(654px + 24px);
+    padding-top: 28px;
   }
 
   footer {
@@ -687,6 +691,7 @@ footer::after {
     align-items: center;
     text-align: left;
     height: 490px;
+    padding-top: 0;
   }
 
   .contact-form-section h2 {
