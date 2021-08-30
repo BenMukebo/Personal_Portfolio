@@ -4,9 +4,6 @@ const showBtn = document.querySelector('nav .show-menu-btn');
 const closedBtn = document.querySelector('nav .closed-menu-btn');
 const navLinks = document.querySelectorAll('nav ul li');
 
-showBtn.addEventListener('click', showMenu);
-closedBtn.addEventListener('click', closeMenu);
-
 function showMenu() {
   navMenu.classList.add('open');
   closedBtn.style.display = 'block';
@@ -22,3 +19,6 @@ function closeMenu() {
 navLinks.forEach((link) => {
   link.addEventListener('click', closeMenu);
 });
+
+showBtn.addEventListener('click', showMenu);
+closedBtn.addEventListener('click', closeMenu);
