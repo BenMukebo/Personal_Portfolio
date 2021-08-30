@@ -527,7 +527,7 @@ footer::after {
     transition: all 0.5s ease-in-out;
   }
 
-  .nav-menu .nav-link:first-child a {
+  .nav-menu .nav-link:last-child a {
     color: #008552;
   }
 
