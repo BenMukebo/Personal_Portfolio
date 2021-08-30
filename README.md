@@ -24,6 +24,9 @@
 - Use GitHub Pages to deploy web pages.
 - Add Google Analytics to a webpage and use it to track activity on that page.
 - Changes regarding accessibility.
+- Use basic JavaScript syntax.
+- Use JavaScript to manipulate DOM elements.
+- Use JavaScript events.
 - Build a personal portfolio site.
 
 ## Built With
