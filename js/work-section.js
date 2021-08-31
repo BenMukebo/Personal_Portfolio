@@ -1,27 +1,3 @@
-const html = document.getElementsByTagName('html')[0];
-const navMenu = document.querySelector('.nav-menu');
-const showBtn = document.querySelector('nav .show-menu-btn');
-const closedBtn = document.querySelector('nav .closed-menu-btn');
-const navLinks = document.querySelectorAll('nav ul li');
-
-function showMenu() {
-  navMenu.classList.add('open');
-  closedBtn.style.display = 'block';
-  html.style.overflow = 'hidden';
-}
-
-function closeMenu() {
-  navMenu.classList.remove('open');
-  closedBtn.style.display = 'none';
-  html.style.overflow = 'auto';
-}
-
-navLinks.forEach((link) => {
-  link.addEventListener('click', closeMenu);
-});
-
-showBtn.addEventListener('click', showMenu);
-closedBtn.addEventListener('click', closeMenu);
 
 const cardContainer = document.querySelector('.card-container');
 const mobileData = [// Array of data that is implemented in the pop-up window
@@ -212,3 +188,7 @@ const mobileData = [// Array of data that is implemented in the pop-up window
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
   }
 ];
+
+function createCard(){
+  
+}
