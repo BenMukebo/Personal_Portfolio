@@ -1,5 +1,6 @@
 
 const cardContainer = document.querySelector('.card-container');
+const popupContainer = document.querySelector('main article');
 
 // Array of data that is implemented in the pop-up window
 const projects = [
@@ -8,6 +9,7 @@ const projects = [
     images: {
       img: './images/Snapshoot-Portfolio-mobile1@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
+      altText: 'project 1 preview image',
     },
     name: 'Multi-Post Stories Gain+Glory_1',
     heading: 'Keeping track of hundreds of components_1',
@@ -43,6 +45,7 @@ const projects = [
     images: {
       img: './images/Snapshoot-Portfolio-mobile2@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
+      altText: 'project 2 preview image',
     },
     name: 'Multi-Post Stories Gain+Glory_2',
     heading: 'Keeping track of hundreds of components_2',
@@ -78,6 +81,7 @@ const projects = [
     images: {
       img: './images/Snapshoot-Portfolio-mobile@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
+      altText: 'project 3 preview image',
     },
     name: 'Multi-Post Stories Gain+Glory_3',
     heading: 'Keeping track of hundreds of components_3',
@@ -113,6 +117,7 @@ const projects = [
     images: {
       img: './images/Snapshoot-Portfolio-mobile4@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
+      altText: 'project 4 preview image',
     },
     name: 'Multi-Post Stories Gain+Glory_4',
     heading: 'Keeping track of hundreds of components_4',
@@ -148,6 +153,7 @@ const projects = [
     images: {
       img: './images/Snapshoot-Portfolio-mobile@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
+      altText: 'project 5 preview image',
     },
     name: 'Multi-Post Stories Gain+Glory_5',
     heading: 'Keeping track of hundreds of components_5',
@@ -183,6 +189,7 @@ const projects = [
     images: {
       img: './images/Snapshoot-Portfolio-mobile6@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
+      altText: 'project 6 preview image',
     },
     name: 'Multi-Post Stories Gain+Glory_6',
     heading: 'Keeping track of hundreds of components_6',
@@ -221,7 +228,7 @@ function createCard(cardObject) {
   let li = document.createElement('li');
   li.className= 'card d-flex';
   li.innerHTML = `<div class="img-card">
-  <img src="${cardObject.images.img}" alt="">
+  <img src="${cardObject.images.img}" alt="${cardObject.images.altText}">
   </div>
   <h3>${cardObject.name}</h3>
   <ul class="program-lang d-flex">
@@ -236,5 +243,33 @@ projects.forEach(project => {
     const card = createCard(project);
     cardContainer.appendChild(card);
     // cardContainer.innerHTML += createCard(project); 
-})
+});
 
+function createPopup(object) {
+ let popupCard = document.createElement('div');
+ popupCard.classList.add('card-popup');
+ popupCard.innerHTML = `
+        <div class="project-img">
+          <img class="hide-icon" src="./images/icons/Disabled.svg" alt="close icon">
+          <img class="card-img" src="${object.images.img}" alt="${object.images.altText}">
+        </div>
+        <div class="article">
+          <h3>${object.heading}</h3>
+          <ul class="program-lang d-flex">
+          ${object.technologies.map((tech) => `<li class="btn tag_btn"> 
+                                              ${tech}
+                                              </li>`).join('')}
+          </ul>
+          <p>${object.description}</p>
+          <div class="btns-popup d-flex flex-center">
+            <button type="button" class="btn-card d-flex flex-center">See Live <img src="./images/icons/Icon-Export@2x.svg" alt=""></button>
+            <button type="button" class="btn-card d-flex flex-center">See Source <img src="./images/icons/Icon-GitHub-1.svg" alt=""></button>
+          </div>
+        </div>`;
+  return popupCard;
+}
+
+projects.forEach(project => {
+  const popupCard = createPopup(project);
+  popupContainer.appendChild(popupCard);
+});
