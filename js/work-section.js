@@ -215,13 +215,14 @@ const projects = [
   },
 ];
 
-
 function createCard(cardObject) {
   let li = document.createElement('li');
   li.className= 'card d-flex';
-  li.innerHTML = `<img src="${cardObject.images.img}" alt="">
+  li.innerHTML = `<div class="img-card">
+  <img src="${cardObject.images.img}" alt="">
+  </div>
   <h3>${cardObject.name}</h3>
-  <ul class='program-lang d-flex'>
+  <ul class="program-lang d-flex">
   ${cardObject.languages.map((lang) => `<li>
    ${lang}</li>`).join('')}
  </ul>

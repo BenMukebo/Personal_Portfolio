@@ -166,10 +166,27 @@ ul {
   }
 }
 
-.card img {
+.card .img-card {
   background: var(--background);
   height: 250px;
-  min-width: 100%;
+  width: 100%;
+  padding: 2%;
+}
+
+.card .img-card:hover{
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.card img {
+  width: 96%;
+  height: 96%;
+  margin-top: 1.5%;
+  opacity: 0.7;
+  transition: all 0.4s ease-in-out;
+}
+.card img:hover {
+  opacity: 0.9;
 }
 
 .social-media-icons li a img {
@@ -216,7 +233,7 @@ ul {
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 24px;
   grid-auto-rows: calc(474px + 20px);
-  padding: 0 10px;
+  padding: 10px;
   text-align: center;
 }
 
