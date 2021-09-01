@@ -6,7 +6,7 @@ const projects = [
   {
     id: 'project_1',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile@2x.png',
+      img: './images/Snapshoot-Portfolio-mobile1@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
     },
     name: 'Multi-Post Stories Gain+Glory_1',
@@ -41,7 +41,7 @@ const projects = [
   {
     id: 'project_2',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile@2x.png',
+      img: './images/Snapshoot-Portfolio-mobile2@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
     },
     name: 'Multi-Post Stories Gain+Glory_2',
@@ -76,7 +76,7 @@ const projects = [
   {
     id: 'project_3',
     images: {
-      img: './images/Snapshoot-Portfolio@2x.png',
+      img: './images/Snapshoot-Portfolio-mobile@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
     },
     name: 'Multi-Post Stories Gain+Glory_3',
@@ -111,7 +111,7 @@ const projects = [
   {
     id: 'project_4',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile@2x.png',
+      img: './images/Snapshoot-Portfolio-mobile4@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
     },
     name: 'Multi-Post Stories Gain+Glory_4',
@@ -181,7 +181,7 @@ const projects = [
   {
     id: 'project_6',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile@2x.png',
+      img: './images/Snapshoot-Portfolio-mobile6@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
     },
     name: 'Multi-Post Stories Gain+Glory_6',
@@ -214,6 +214,8 @@ const projects = [
     ],
   },
 ];
+
+// Implementing the Flex card dynamically
 
 function createCard(cardObject) {
   let li = document.createElement('li');
