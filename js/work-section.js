@@ -257,8 +257,12 @@ function createPopup(object) {
         <div class="article">
           <h3>${object.heading}</h3>
           <ul class="program-lang d-flex">
-          ${object.technologies.map((tech) => `<li class="btn tag_btn"> 
+          ${object.technologies.map((tech) => `<li class="btn tag_btn mobile-invisible"> 
                                               ${tech}
+                                              </li>`).join('')}
+
+          ${object.languages.map((lang) => `<li class="btn tag_btn desktop-invisible"> 
+                                              ${lang}
                                               </li>`).join('')}
           </ul>
           <p>${object.description}</p>
@@ -284,7 +288,7 @@ const closeButtons = document.querySelectorAll('.card-popup .hide-icon');
 buttons.forEach((button) => {
   const currentModal = document.getElementById(button.classList[1]);
   button.addEventListener('click', ()=> {
-    popupContainer.style.display = 'block';
+    popupContainer.style.display = 'flex';
     currentModal.classList.add('active');
   });
 });

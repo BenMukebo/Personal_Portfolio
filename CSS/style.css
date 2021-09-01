@@ -1,4 +1,4 @@
-/@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;600;800&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -34,6 +34,14 @@ html {
   font-size: 40px;
   font-weight: var(--weight);
   line-height: 52px;
+}
+
+.mobile-invisible {
+  display: none;
+}
+
+.desktop-invisible {
+  display: block;
 }
 
 body {
@@ -311,9 +319,12 @@ button:active {
 
 article {
   display: none;  
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 100%;
   max-height: 100%;
-  background-color: #c1c7d0;  
+  background-color: #c1c7d0bd;  
   position: fixed;
   z-index: 3;
   left: 0;
@@ -674,6 +685,14 @@ footer::after {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
+  .mobile-invisible {
+    display: block;
+  }
+  
+  .desktop-invisible {
+    display: none;
+  }
+
   header {
     position: fixed;
     left: 0;
@@ -776,6 +795,10 @@ footer::after {
     grid-column: 1/span 2;
   }
 
+  .card-popup {
+    width: 65%;
+  }
+
   .about p {
     width: calc(654px - 24px);
   }
@@ -822,7 +845,17 @@ footer::after {
     width: 369px;
     max-height: 474px;
   }
+  .card-popup .article {
+    width: 100%;
+    position: relative;
+  }
 
+  .card-popup .article .btns-popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
   .about-section {
     background-image: none;
     background-image:
