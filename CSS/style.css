@@ -309,7 +309,8 @@ button:active {
 
 /* details popup window */
 
-article {  
+article {
+  display: none;  
   width: 100%;
   max-height: 100%;
   background-color: #c1c7d0;  
@@ -317,8 +318,8 @@ article {
   z-index: 3;
   left: 0;
   top: 0; 
+  border: 1px solid #d0d9d4;
   padding: 20px 16px 26px;
-  border: 1px solid #d0d9d4; 
 }
 
 .card-popup {  
@@ -330,7 +331,7 @@ article {
   margin: 0;
   z-index: 4;
   border-radius: 16px;
-  background-color: #fff;
+  background-color: #fff;  
   /* overflow: auto; */
 }
 

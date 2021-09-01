@@ -284,6 +284,7 @@ const closeButtons = document.querySelectorAll('.card-popup .hide-icon');
 buttons.forEach((button) => {
   const currentModal = document.getElementById(button.classList[1]);
   button.addEventListener('click', ()=> {
+    popupContainer.style.display = 'block';
     currentModal.classList.add('active');
   });
 });
@@ -292,5 +293,6 @@ closeButtons.forEach((closeBtn) => {
  closeBtn.addEventListener('click', () => {
   //const activePopup = document.querySelector('.card-popup.active');
   document.querySelector('.card-popup.active').classList.remove('active');
+  popupContainer.style.display = 'none';
  });
 });
