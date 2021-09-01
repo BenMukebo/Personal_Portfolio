@@ -321,7 +321,7 @@ article {
   border: 1px solid #d0d9d4; 
 }
 .card-popup {
-  /* display: none; */
+  display: none;
   position: relative;
   width: 100%;
   max-height: 100%;
