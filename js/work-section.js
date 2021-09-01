@@ -1,4 +1,4 @@
-
+const html = document.getElementsByTagName('html')[0];
 const cardContainer = document.querySelector('.card-container');
 const popupContainer = document.querySelector('main article');
 
@@ -151,7 +151,7 @@ const projects = [
   {
     id: 'project_5',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile@2x.png',
+      img: './images/Snapshoot-Portfolio-mobile5@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 5 preview image',
     },
@@ -242,7 +242,6 @@ function createCard(cardObject) {
 projects.forEach(project => {
     const card = createCard(project);
     cardContainer.appendChild(card);
-    // cardContainer.innerHTML += createCard(project); 
 });
 
 function createPopup(object) {
@@ -250,27 +249,27 @@ function createPopup(object) {
  popupCard.classList.add('card-popup');
  popupCard.id = object.id;
  popupCard.innerHTML = `
-        <div class="project-img">
-          <img class="hide-icon" src="./images/icons/Disabled.svg" alt="close icon">
-          <img class="card-img" src="${object.images.img}" alt="${object.images.altText}">
-        </div>
-        <div class="article">
-          <h3>${object.heading}</h3>
-          <ul class="program-lang d-flex">
-          ${object.technologies.map((tech) => `<li class="btn tag_btn mobile-invisible"> 
-                                              ${tech}
-                                              </li>`).join('')}
+  <div class="project-img">
+  <img class="card-img" src="${object.images.img}" alt="${object.images.altText}">
+    <img class="hide-icon" src="./images/icons/Disabled.svg" alt="close icon">
+  </div>
+  <div class="article">
+    <h3>${object.heading}</h3>
+    <ul class="program-lang d-flex">
+    ${object.languages.map((lang) => `<li class="btn tag_btn mobile-invisible"> 
+                                        ${lang}
+                                        </li>`).join('')}
 
-          ${object.languages.map((lang) => `<li class="btn tag_btn desktop-invisible"> 
-                                              ${lang}
-                                              </li>`).join('')}
-          </ul>
-          <p>${object.description}</p>
-          <div class="btns-popup d-flex flex-center">
-            <button type="button" class="btn-card d-flex flex-center">See Live <img src="./images/icons/Icon-Export@2x.svg" alt=""></button>
-            <button type="button" class="btn-card d-flex flex-center">See Source <img src="./images/icons/Icon-GitHub-1.svg" alt=""></button>
-          </div>
-        </div>`;
+    ${object.technologies.map((tech) => `<li class="btn tag_btn desktop-invisible"> 
+                                        ${tech}
+                                        </li>`).join('')}
+    </ul>
+    <p>${object.description}</p>
+    <div class="btns-popup d-flex">
+      <button type="button" class="btn-card d-flex flex-center"><span>See Live</span><img src="./images/icons/Icon-Export@2x.svg" alt=""></button>
+      <button type="button" class="btn-card d-flex flex-center"><span>See Source</span><img src="./images/icons/Icon-GitHub-1.svg" alt=""></button>
+    </div>
+  </div>`;
   return popupCard;
 }
 
@@ -290,6 +289,8 @@ buttons.forEach((button) => {
   button.addEventListener('click', ()=> {
     popupContainer.style.display = 'flex';
     currentModal.classList.add('active');
+    html.style.overflow = 'hidden';
+
   });
 });
 
@@ -298,5 +299,6 @@ closeButtons.forEach((closeBtn) => {
   //const activePopup = document.querySelector('.card-popup.active');
   document.querySelector('.card-popup.active').classList.remove('active');
   popupContainer.style.display = 'none';
+  html.style.overflow = 'auto';
  });
 });

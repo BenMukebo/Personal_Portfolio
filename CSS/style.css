@@ -37,11 +37,11 @@ html {
 }
 
 .mobile-invisible {
-  display: none;
+  display: block;
 }
 
 .desktop-invisible {
-  display: block;
+  display: none;
 }
 
 body {
@@ -181,7 +181,7 @@ ul {
   padding: 2%;
 }
 
-.card .img-card:hover{
+.card .img-card:hover {
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
@@ -194,6 +194,7 @@ ul {
   opacity: 0.7;
   transition: all 0.4s ease-in-out;
 }
+
 .card img:hover {
   opacity: 0.9;
 }
@@ -202,10 +203,6 @@ ul {
   padding: 0 12px;
   margin: 5px 0;
   transition: all 0.3s ease-in-out;
-
-  /* min-width: 100%; */
-
-  /* width: 10px; */
 }
 
 .social-media-icons li a img:hover {
@@ -262,7 +259,7 @@ ul {
   transform: scale(1.04);
 }
 
-.card h3{
+.card h3 {
   padding: 16px;
   font-weight: 600;
   font-size: 24px;
@@ -318,22 +315,22 @@ button:active {
 /* details popup window */
 
 article {
-  display: none;  
-  justify-content: center;
-  align-items: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
   width: 100%;
   height: 100%;
   max-height: 100%;
-  background-color: #c1c7d0bd;  
-  position: fixed;
-  z-index: 3;
-  left: 0;
-  top: 0; 
+  background-color: #c1c7d0bd;
   border: 1px solid #d0d9d4;
-  padding: 20px 16px 26px;
+  padding: 20px 16px;
+  /* transform: scale(0);
+  transition: 600ms ease-in-out; */
 }
 
-.card-popup {  
+.card-popup {
   display: none;
   position: relative;
   width: 100%;
@@ -343,48 +340,49 @@ article {
   z-index: 4;
   border-radius: 16px;
   background-color: #fff;  
-  /* overflow: auto; */
+  transform: scale(0);
+  transition: 600ms ease-in-out;
 }
 
 .card-popup.active {
   display: block;
+  transform: scale(1);
+  transition: 600ms ease-in-out;
 }
 
 .card-popup .project-img {
-  position: relative;
   width: 100%;
   height: auto;
   padding: 16px;
   text-align: center;
-  /* background-color: red; */
+}
+
+.card-popup .card-img {
+  position: relative;
+  max-width: 100%;
+}
+
+.card-popup .card-img:hover {
+  transform: scale(0.98);
 }
 
 .card-popup .hide-icon {
   position: absolute;
   top: 40px;
-  right: 8%;
+  right: 8.5%;
   z-index: 5;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   padding: 5px;
-  /* background-color: yellow; */
-}
-
-.card-popup .card-img {
-  max-width: 100%;
-}
-
-.card-popup .card-img:hover {
-  transform: scale(0.9);
 }
 
 .card-popup .article {
-  width: 90%;
+  width: 100%;
   min-width: 311px;
   padding: 0 16px;
 }
 
-.card-popup h3{
+.card-popup h3 {
   width: 70%;
   min-width: 259px;
   font-weight: 600;
@@ -412,8 +410,12 @@ article {
   background: var(--background);
 }
 
+.card-popup .program-lang li:nth-child(4) {
+  display: none;
+}
+
 .card-popup p {
-  font-weight: 600;
+  width: 90%;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -421,9 +423,9 @@ article {
 }
 
 .card-popup button {
-  margin: 16px;
+  margin: 16px 0;
   height: 48px;
-  padding: 12px 16px;
+  padding: 12px 14px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 500;
@@ -433,8 +435,13 @@ article {
   background-color: var(--secondary-btn);
   transition: all 0.4s ease 0.2s;
 }
-.card-popup button img {
-  margin-left: 16px;
+
+.card-popup button:first-child {
+  margin-right: 12px;
+}
+
+.card-popup button span {
+  margin-right: 16px;
 }
 
 .card-popup button:hover {
@@ -449,10 +456,8 @@ article {
 
 
 
-
-
 /* Modal Content */
-.modal-content {
+/* .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
@@ -460,7 +465,7 @@ article {
   width: 80%;
 }
 
-/* The Close Button */
+The Close Button
 .close {
   color: #aaaaaa;
   float: right;
@@ -473,8 +478,7 @@ article {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
+} */
 
 .about-section {
   background: url("../images/illustration\ 2-about\ me\ mobile@2x.png") left 21% no-repeat, url("../images/illustration\ 1-\ about\ me-mobile@2x.png")  right 2%  no-repeat;
@@ -685,14 +689,6 @@ footer::after {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media screen and (min-width: 768px) {
-  .mobile-invisible {
-    display: block;
-  }
-  
-  .desktop-invisible {
-    display: none;
-  }
-
   header {
     position: fixed;
     left: 0;
@@ -833,6 +829,14 @@ footer::after {
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media screen and (min-width: 992px) {
+  .mobile-invisible {
+    display: none;
+  }
+
+  .desktop-invisible {
+    display: block;
+  }
+
   .card-container,
   .card-wrapper {
     width: calc(738px + 24px + 20px);
