@@ -366,10 +366,6 @@ article {
   border-radius: 8px;
 }
 
-.card-popup .card-img:hover {
-  transform: scale(0.98);
-}
-
 .card-popup .hide-icon {
   position: absolute;
   top: 40px;
@@ -643,10 +639,6 @@ footer::after {
     font-weight: 800;
     letter-spacing: 0.4px;
     animation: top-bottom 2s ease-in-out 0.5s;
-
-    /* font-size: 48px; */
-
-    /* line-height: 60px; */
   }
 
   .main-section p {
@@ -714,7 +706,6 @@ footer::after {
   }
 
   .main-section {
-    /* padding-top: 170px; */
     margin-top: 32px;
     background-image: none;
     background-image: url("../images/Header-llustration-desktop@2x.png");
@@ -836,11 +827,6 @@ footer::after {
   .card-popup .project-img {
     margin-top: 48px;
   }
-
-  /* .card-popup .card-img {
-    position: relative;
-    max-width: 100%;
-  } */
 
   .card-popup .hide-icon {
     position: absolute;
