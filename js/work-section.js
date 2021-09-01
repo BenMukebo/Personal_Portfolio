@@ -1,4 +1,4 @@
-const html = document.getElementsByTagName('html')[0];
+const htmls = document.getElementsByTagName('html')[0];
 const cardContainer = document.querySelector('.card-container');
 const popupContainer = document.querySelector('main article');
 
@@ -17,8 +17,8 @@ const projects = [
       'Ruby on Rails',
       'Css',
       'JavaScript',
-      'html'
-      ],
+      'html',
+    ],
     technologies: [
       'Codekit',
       'GitHub',
@@ -28,7 +28,7 @@ const projects = [
       'Codepen',
     ],
     // button: 'See Project',
-    description: `Project_1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: 'Project_1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     list: [
       {
         text: 'See Live',
@@ -53,8 +53,8 @@ const projects = [
       'Ruby on Rails',
       'Css',
       'JavaScript',
-      'html'
-      ],
+      'html',
+    ],
     technologies: [
       'Codekit',
       'GitHub',
@@ -64,7 +64,7 @@ const projects = [
       'Codepen',
     ],
     // button: 'See Project',
-    description: `Project_2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: 'Project_2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     list: [
       {
         text: 'See Live',
@@ -89,8 +89,8 @@ const projects = [
       'Ruby on Rails',
       'Css',
       'JavaScript',
-      'html'
-      ],
+      'html',
+    ],
     technologies: [
       'Codekit',
       'GitHub',
@@ -100,7 +100,7 @@ const projects = [
       'Codepen',
     ],
     // button: 'See Project',
-    description: `Project_3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: 'Project_3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     list: [
       {
         text: 'See Live',
@@ -125,8 +125,8 @@ const projects = [
       'Ruby on Rails',
       'Css',
       'JavaScript',
-      'html'
-      ],
+      'html',
+    ],
     technologies: [
       'Codekit',
       'GitHub',
@@ -136,7 +136,7 @@ const projects = [
       'Codepen',
     ],
     // button: 'See Project',
-    description: `Project_4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: 'Project_4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     list: [
       {
         text: 'See Live',
@@ -161,8 +161,8 @@ const projects = [
       'Ruby on Rails',
       'Css',
       'JavaScript',
-      'html'
-      ],
+      'html',
+    ],
     technologies: [
       'Codekit',
       'GitHub',
@@ -172,7 +172,7 @@ const projects = [
       'Codepen',
     ],
     // button: 'See Project',
-    description: `Project_5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: 'Project_5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     list: [
       {
         text: 'See Live',
@@ -197,8 +197,8 @@ const projects = [
       'Ruby on Rails',
       'Css',
       'JavaScript',
-      'html'
-      ],
+      'html',
+    ],
     technologies: [
       'Codekit',
       'GitHub',
@@ -208,7 +208,7 @@ const projects = [
       'Codepen',
     ],
     // button: 'See Project',
-    description: `Project_6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
+    description: 'Project_6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     list: [
       {
         text: 'See Live',
@@ -225,8 +225,8 @@ const projects = [
 // Implementing the Flex card dynamically
 
 function createCard(cardObject) {
-  let li = document.createElement('li');
-  li.className= 'card d-flex';
+  const li = document.createElement('li');
+  li.className = 'card d-flex';
   li.innerHTML = `<div class="img-card">
   <img src="${cardObject.images.img}" alt="${cardObject.images.altText}">
   </div>
@@ -239,16 +239,16 @@ function createCard(cardObject) {
   return li;
 }
 
-projects.forEach(project => {
-    const card = createCard(project);
-    cardContainer.appendChild(card);
+projects.forEach((project) => {
+  const card = createCard(project);
+  cardContainer.appendChild(card);
 });
 
 function createPopup(object) {
- let popupCard = document.createElement('div');
- popupCard.classList.add('card-popup');
- popupCard.id = object.id;
- popupCard.innerHTML = `
+  const popupCard = document.createElement('div');
+  popupCard.classList.add('card-popup');
+  popupCard.id = object.id;
+  popupCard.innerHTML = `
   <div class="project-img">
   <img class="card-img" src="${object.images.img}" alt="${object.images.altText}">
     <img class="hide-icon" src="./images/icons/Disabled.svg" alt="close icon">
@@ -273,11 +273,10 @@ function createPopup(object) {
   return popupCard;
 }
 
-projects.forEach(project => {
+projects.forEach((project) => {
   const popupCard = createPopup(project);
   popupContainer.appendChild(popupCard);
 });
-
 
 // Toggle PopUp window
 
@@ -286,19 +285,18 @@ const closeButtons = document.querySelectorAll('.card-popup .hide-icon');
 
 buttons.forEach((button) => {
   const currentModal = document.getElementById(button.classList[1]);
-  button.addEventListener('click', ()=> {
+  button.addEventListener('click', () => {
     popupContainer.style.display = 'flex';
     currentModal.classList.add('active');
-    html.style.overflow = 'hidden';
-
+    htmls.style.overflow = 'hidden';
   });
 });
 
-closeButtons.forEach((closeBtn) => {  
- closeBtn.addEventListener('click', () => {
-  //const activePopup = document.querySelector('.card-popup.active');
-  document.querySelector('.card-popup.active').classList.remove('active');
-  popupContainer.style.display = 'none';
-  html.style.overflow = 'auto';
- });
+closeButtons.forEach((closeBtn) => {
+  closeBtn.addEventListener('click', () => {
+  // const activePopup = document.querySelector('.card-popup.active');
+    document.querySelector('.card-popup.active').classList.remove('active');
+    popupContainer.style.display = 'none';
+    htmls.style.overflow = 'auto';
+  });
 });

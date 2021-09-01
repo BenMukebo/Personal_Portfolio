@@ -22,9 +22,3 @@ navLinks.forEach((link) => {
 
 showBtn.addEventListener('click', showMenu);
 closedBtn.addEventListener('click', closeMenu);
-
-
-buttons.forEach(button, () => { 
-  // const currentModal = document.querySelector('');
- button.classList.contains('project'${button.id}) button.addEventListener('click', ()=> { });
- }); 
