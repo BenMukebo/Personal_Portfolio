@@ -254,7 +254,7 @@ ul {
   transform: scale(1.04);
 }
 
-.card h3 {
+.card h3{
   padding: 16px;
   font-weight: 600;
   font-size: 24px;
@@ -306,6 +306,158 @@ button:hover {
 button:active {
   background-color: #008552;
 }
+
+/* details popup window */
+
+article {
+  width: 100%;
+  max-height: 100%;
+  background-color: #c1c7d0;  
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0; 
+  padding: 20px 16px 26px;
+  border: 1px solid #d0d9d4; 
+}
+.card-popup {
+  /* display: none; */
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 4;
+  border-radius: 16px;
+  background-color: #fff;
+  /* overflow: auto; */
+}
+
+.card-popup .project-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.card-popup .hide-icon {
+  position: absolute;
+  top: 40px;
+  right: 8%;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  /* background-color: yellow; */
+}
+
+.card-popup .card-img {
+  max-width: 100%;
+}
+
+.card-popup .card-img:hover {
+  transform: scale(0.9);
+}
+
+.card-popup .article {
+  width: 90%;
+  min-width: 311px;
+  padding: 0 16px;
+}
+
+.card-popup h3{
+  width: 70%;
+  min-width: 259px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--primary);
+}
+
+.card-popup ul {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.card-popup .program-lang li {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 12px 4px;
+  color: #3a4a42;
+  background: var(--background);
+}
+
+.card-popup p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #344563;
+}
+
+.card-popup button {
+  margin: 16px;
+  height: 48px;
+  padding: 12px 16px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--secondary-btn);
+  transition: all 0.4s ease 0.2s;
+}
+.card-popup button img {
+  margin-left: 16px;
+}
+
+.card-popup button:hover {
+  cursor: pointer;
+  box-shadow: 10px 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(0.9);
+}
+
+.card-popup button:active {
+  background-color: #008552;
+}
+
+
+
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 .about-section {
   background: url("../images/illustration\ 2-about\ me\ mobile@2x.png") left 21% no-repeat, url("../images/illustration\ 1-\ about\ me-mobile@2x.png")  right 2%  no-repeat;
