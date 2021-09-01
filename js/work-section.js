@@ -235,7 +235,7 @@ function createCard(cardObject) {
   ${cardObject.languages.map((lang) => `<li>
    ${lang}</li>`).join('')}
  </ul>
-  <button type="button" class="btn-card">See Project</button>`;
+  <button type="button" class="btn-card ${cardObject.id}">See Project</button>`;
   return li;
 }
 
@@ -248,6 +248,7 @@ projects.forEach(project => {
 function createPopup(object) {
  let popupCard = document.createElement('div');
  popupCard.classList.add('card-popup');
+ popupCard.id = object.id;
  popupCard.innerHTML = `
         <div class="project-img">
           <img class="hide-icon" src="./images/icons/Disabled.svg" alt="close icon">
@@ -272,4 +273,24 @@ function createPopup(object) {
 projects.forEach(project => {
   const popupCard = createPopup(project);
   popupContainer.appendChild(popupCard);
+});
+
+
+// Toggle PopUp window
+
+const buttons = document.querySelectorAll('li.card .btn-card');
+const closeButtons = document.querySelectorAll('.card-popup .hide-icon');
+
+buttons.forEach((button) => {
+  const currentModal = document.getElementById(button.classList[1]);
+  button.addEventListener('click', ()=> {
+    currentModal.classList.add('active');
+  });
+});
+
+closeButtons.forEach((closeBtn) => {  
+ closeBtn.addEventListener('click', () => {
+  //const activePopup = document.querySelector('.card-popup.active');
+  document.querySelector('.card-popup.active').classList.remove('active');
+ });
 });
