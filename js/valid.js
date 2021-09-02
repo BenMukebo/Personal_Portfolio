@@ -12,6 +12,10 @@ small.style.visibility = 'hidden';
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
     small.style.visibility = 'visible';
+    setTimeout( ()=> {
+      small.style.visibility = 'hidden';
+      email.style.border = '1px solid #d0d9d4';
+    },8000)
     email.style.border = '1px solid #e74c3c';
     e.preventDefault();
   } else {
