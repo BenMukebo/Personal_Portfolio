@@ -4,7 +4,7 @@ const alertParent = document.querySelector('.btn-submit-alert');
 const small = document.createElement('small');
 alertParent.appendChild(small);
 small.innerText = 'Please enter a valid email address.';
-small.style.background = '#fff';
+small.style.backgroundColor = '#fff';
 small.style.color = '#e74c3c';
 small.style.padding = '12px';
 small.style.visibility = 'hidden';
