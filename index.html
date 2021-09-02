@@ -131,7 +131,7 @@
       <div class="form-sub-container">
         <h2 class="h2-size">I'm always interested in hearing about new projects, so if you'd like to chat please get in
           touch.</h2>
-        <form action="https://formspree.io/f/xnqlovnj" method="post">
+        <form action="https://formspree.io/f/xnqlovnj" method="post" id="form">
           <div>
             <input type="text" id="name" name="user_name" placeholder="Full name" maxlength="30" required>
           </div>
@@ -142,7 +142,7 @@
             <textarea id="msg" name="user_message" placeholder="Enter text here" rows="5" maxlength="500"
               required></textarea>
           </div>
-          <div>
+          <div class="btn-submit-alert">
             <button type="submit" class="footer-btn">Get in touch</button>
           </div>
         </form>
@@ -176,6 +176,7 @@
   </main>
   <script src="./js/work-section.js"></script>
   <script src="./js/menu.js"></script>
+  <script src="./js/valid.js"></script>
 
 </body>
 

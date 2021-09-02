@@ -582,11 +582,11 @@ section.contact-form-section {
 }
 
 .contact-form-section input {
-  margin-bottom: 24px;
+  margin: 5px 5px 24px;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   padding: 15px 16px;
-  width: 100%;
+  width: 95%;
   font-size: 16px;
 }
 
@@ -594,7 +594,7 @@ section.contact-form-section {
   margin-bottom: 24px;
   border-radius: 4px;
   padding: 12px;
-  width: 100%;
+  width: 95%;
   font-size: 16px;
 }
 
@@ -609,6 +609,12 @@ input:hover::placeholder,
 textarea:hover::placeholder {
   transition: 0.5s;
   transform: translateX(5px);
+}
+
+.btn-submit-alert {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer-icons {
