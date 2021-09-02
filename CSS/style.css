@@ -617,12 +617,12 @@ textarea:hover::placeholder {
   align-items: flex-start;
 }
 
-form .alert {
+/* form .alert {
   visibility: hidden;
   color: #fff;
   background-color: #e74c3c;
   padding: 12px;
-}
+} */
 
 .footer-icons {
   width: 100%;
