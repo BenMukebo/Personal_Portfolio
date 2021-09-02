@@ -79,7 +79,7 @@ const projects = [
   {
     id: 'project_3',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile@2x.png',
+      img: './images/Snapshoot-Portfolio-mobile@3x.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 3 preview image',
     },
