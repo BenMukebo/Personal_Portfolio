@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ben's Portfolio</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-95YMP3C67Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-95YMP3C67Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
     gtag('config', 'G-95YMP3C67Q');
   </script>
@@ -21,14 +21,14 @@
 <body>
   <header class="main-header d-flex">
     <h2>Welcome</h2>
-    <nav class="d-flex">
+    <nav class="nav d-flex">
       <ul class="nav-menu d-flex flex-center">
         <li class="nav-link"><a href="#Portfolio">Portoflio</a></li>
         <li class="nav-link active"><a href="#About">About</a></li>
         <li class="nav-link"><a href="#Contact">Contact</a></li>
       </ul>
       <img src="./images/icons/Union.png" class="show-menu-btn" alt="union">
-      <img src="./images/icons/Icon.png" class="closed-menu-btn" alt="">
+      <img src="./images/icons/Icon@2x.svg" class="closed-menu-btn" alt="">
     </nav>
   </header>
 
@@ -79,75 +79,11 @@
       <div class="works-section-title">
         <h2 class="h2-size">My Recent Works</h2>
       </div>
-      <div class="card-container">
-        <div class="card d-flex">
-          <img src="#" alt="">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="program-lang d-flex">
-            <li>Ruby on rails</li>
-            <li>css</li>
-            <li>JavScript</li>
-            <li>html</li>
-          </ul>
-          <button type="button" class="btn-card">See Project</button>
-        </div>
-        <div class="card d-flex">
-          <img src="#" alt="">
-          <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-          <ul class="program-lang d-flex">
-            <li>Ruby on rails</li>
-            <li>css</li>
-            <li>JavScript</li>
-            <li>html</li>
-          </ul>
-          <button type="button" class="btn-card">See Project</button>
-        </div>
-        <div class="card d-flex">
-          <img src="#" alt="">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="program-lang d-flex">
-            <li>Ruby on rails</li>
-            <li>css</li>
-            <li>JavScript</li>
-            <li>html</li>
-          </ul>
-          <button type="button" class="btn-card">See Project</button>
-        </div>
-        <div class="card d-flex">
-          <img src="#" alt="">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="program-lang d-flex">
-            <li>Ruby on rails</li>
-            <li>css</li>
-            <li>JavScript</li>
-            <li>html</li>
-          </ul>
-          <button type="button" class="btn-card">See Project</button>
-        </div>
-        <div class="card d-flex">
-          <img src="#" alt="">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="program-lang d-flex">
-            <li>Ruby on rails</li>
-            <li>css</li>
-            <li>JavScript</li>
-            <li>html</li>
-          </ul>
-          <button type="button" class="btn-card">See Project</button>
-        </div>
-        <div class="card d-flex">
-          <img src="#" alt="">
-          <h3>Multi-Post Stories Gain+Glory</h3>
-          <ul class="program-lang d-flex">
-            <li>Ruby on rails</li>
-            <li>css</li>
-            <li>JavScript</li>
-            <li>html</li>
-          </ul>
-          <button type="button" class="btn-card">See Project</button>
-        </div>
-      </div>
+      <ul class="card-container">
+      </ul>
     </section>
+    <article class="flex-center">
+    </article>
     <section class="about-section" id="About">
       <div class="about d-flex flex-center">
         <h2 class="h2-size">About me</h2>
@@ -238,7 +174,9 @@
       </div>
     </footer>
   </main>
+  <script src="./js/work-section.js"></script>
   <script src="./js/menu.js"></script>
+
 </body>
 
 </html>

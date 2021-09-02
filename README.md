@@ -27,6 +27,7 @@
 - Use basic JavaScript syntax.
 - Use JavaScript to manipulate DOM elements.
 - Use JavaScript events.
+- Use objects to store and access data.
 - Build a personal portfolio site.
 
 ## Built With
