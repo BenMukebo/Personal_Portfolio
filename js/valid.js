@@ -34,7 +34,7 @@ const userMsg = document.getElementById('msg');
 
 function readAndPrefill() {
   const string = localStorage.getItem('dataStorage');
-  if(string){
+  if (string) {
     const storedObj = JSON.parse(string);
     email.value = storedObj.enterName;
     userName.value = storedObj.enterEmail;
@@ -44,11 +44,17 @@ function readAndPrefill() {
   return '';
 }
 
-let input = {
+const input = {
   enterEmail: readAndPrefill().enterEmail,
   enterName: readAndPrefill().enterName,
   enterMessage: readAndPrefill().enterMessage,
 };
+
+function storeInput() {
+  if (localStorage.getItem('dataStorage') !== JSON.stringify(input)) {
+    localStorage.setItem('dataStorage', JSON.stringify(input));
+  }
+}
 
 email.addEventListener('change', (e) => {
   input.enterEmail = e.target.value;
@@ -63,11 +69,4 @@ userMsg.addEventListener('change', (e) => {
   storeInput();
 });
 
- function storeInput() {
-  if(localStorage.getItem('dataStorage') !== JSON.stringify(input)){
-    localStorage.setItem('dataStorage', JSON.stringify(input));
-  }
-}
-
 readAndPrefill();
-
