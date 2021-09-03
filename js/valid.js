@@ -40,11 +40,20 @@ let input = {
 
 email.addEventListener('change', (e) => {
   input.enterEmail = e.target.value;
+  storeInput();
 });
 userName.addEventListener('change', (e) => {
   input.enterName = e.target.value;
+  storeInput();
 })
 message.addEventListener('change', (e) => {
   input.enterMessage = e.target.value;
+  storeInput();
 })
+
+ function storeInput(){
+  if(localStorage.getItem('dataStorage') !== JSON.stringify(input)){
+    localStorage.setItem('dataStorage', JSON.stringify(input));
+  }
+}
 
