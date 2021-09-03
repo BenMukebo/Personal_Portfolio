@@ -233,7 +233,7 @@ function createCard(cardObject) {
   <h3>${cardObject.name}</h3>
   <ul class="program-lang d-flex">
   ${cardObject.languages.map((lang) => `<li>
-   ${lang}</li>`).join('')}
+   ${lang}</li>`)}
  </ul>
   <button type="button" class="btn-card ${cardObject.id}">See Project</button>`;
   return li;
@@ -260,9 +260,6 @@ function createPopup(object) {
                                         ${lang}
                                         </li>`).join('')}
 
-    ${object.technologies.map((tech) => `<li class="btn tag_btn desktop-invisible"> 
-                                        ${tech}
-                                        </li>`).join('')}
     </ul>
     <p>${object.description}</p>
     <div class="btns-popup d-flex">

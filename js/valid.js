@@ -22,7 +22,6 @@ form.addEventListener('submit', (e) => {
       email.style.border = '1px solid #d0d9d4';
       email.style.boxShadow = 'none';
     }, 8000);
-    e.preventDefault();
   } else {
     alertMsg.style.visibility = 'hidden';
     email.style.border = '1px solid #d0d9d4';
@@ -41,7 +40,7 @@ function readAndPrefill() {
     userMsg.value = storedObj.enterMessage;
     return storedObj;
   }
-  return '';
+  return null;
 }
 
 const input = {
