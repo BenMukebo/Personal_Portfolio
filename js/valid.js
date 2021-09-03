@@ -28,3 +28,23 @@ form.addEventListener('submit', (e) => {
     email.style.border = '1px solid #d0d9d4';
   }
 });
+
+const userName = document.getElementById('name');
+const message = document.getElementById('msg');
+
+let input = {
+  enterEmail: '',
+  enterName: '',
+  enterMessage: '',
+};
+
+email.addEventListener('change', (e) => {
+  input.enterEmail = e.target.value;
+});
+userName.addEventListener('change', (e) => {
+  input.enterName = e.target.value;
+})
+message.addEventListener('change', (e) => {
+  input.enterMessage = e.target.value;
+})
+
