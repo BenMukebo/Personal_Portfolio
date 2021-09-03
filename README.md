@@ -30,6 +30,7 @@
 - Use objects to store and access data.
 - Use client-side validation to catch and throw errors in the UI.
 - Build a personal portfolio site.
+- Use local storage to save user input.
 
 ## Built With
 
@@ -37,6 +38,8 @@
 - CSS
 - CSS Flexbox
 - CSS CSS Grid
+- Javacript
+- DOM
 - Git & GitHub
 
 
