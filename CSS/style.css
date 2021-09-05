@@ -88,10 +88,11 @@ footer .mail-container a {
   line-height: 32px;
   letter-spacing: 0.4px;
 }
+
 /* Hamburger Menu Mobile  Icons */
 
 nav .nav-menu.open,
-nav .nav-menu.hide  {
+nav .nav-menu.hide {
   visibility: visible;
   display: flex;
   flex-direction: column;
@@ -353,7 +354,7 @@ article {
   z-index: 3;
   background-color: #c1c7d0c0;
   backdrop-filter: blur(5px);
-  border: 1px solid #d0d9d4;  
+  border: 1px solid #d0d9d4;
 }
 
 .fixed {
