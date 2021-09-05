@@ -88,11 +88,10 @@ footer .mail-container a {
   line-height: 32px;
   letter-spacing: 0.4px;
 }
-
 /* Hamburger Menu Mobile  Icons */
 
 nav .nav-menu.open,
-nav .nav-menu.hide {
+nav .nav-menu.hide  {
   visibility: visible;
   display: flex;
   flex-direction: column;
@@ -344,8 +343,6 @@ button:active {
 
 article {
   visibility: hidden;
-
-  /* display: none; */
   display: flex;
   justify-content: center;
   position: fixed;
@@ -356,7 +353,7 @@ article {
   z-index: 3;
   background-color: #c1c7d0c0;
   backdrop-filter: blur(5px);
-  border: 1px solid #d0d9d4;
+  border: 1px solid #d0d9d4;  
 }
 
 .fixed {
@@ -532,11 +529,11 @@ article {
 }
 
 .card-popup button:first-child {
-  margin-right: 12px;
+  margin-right: 8px;
 }
 
 .card-popup button span {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .card-popup button:hover {
@@ -719,6 +716,14 @@ footer::after {
 
   .card-wrapper {
     padding: 0 24px;
+  }
+
+  .card-popup button:first-child {
+    margin-right: 12px;
+  }
+
+  .card-popup button span {
+    margin-right: 16px;
   }
 }
 
