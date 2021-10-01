@@ -376,6 +376,10 @@ article {
   z-index: 5;
 }
 
+.btns-popup a {
+  text-decoration: none;
+}
+
 .inActive {
   animation: zooms-in 1s ease;
 }

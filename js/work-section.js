@@ -37,7 +37,7 @@ const projects = [
         liveDemo: 'https://benmukebo.github.io/Capstone_Project_One/'
       },
       {
-        text: 'See Source',
+        text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
         codeSource: 'https://github.com/BenMukebo/Capstone_Project_One'
       },
@@ -76,7 +76,7 @@ const projects = [
         liveDemo: 'https://benmukebo.github.io/ShapelyDemo/'
       },
       {
-        text: 'See Source',
+        text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
         codeSource: 'https://github.com/BenMukebo/ShapelyDemo'
 
@@ -116,7 +116,7 @@ const projects = [
         liveDemo: ''
       },
       {
-        text: 'See Source',
+        text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
         codeSource: ''
       },
@@ -155,7 +155,7 @@ const projects = [
         liveDemo: ''
       },
       {
-        text: 'See Source',
+        text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
         codeSource: ''
       },
@@ -194,7 +194,7 @@ const projects = [
         liveDemo: ''
       },
       {
-        text: 'See Source',
+        text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
         codeSource: ''
       },
@@ -233,7 +233,7 @@ const projects = [
         liveDemo: ''
       },
       {
-        text: 'See Source',
+        text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
         codeSource: ''
       },
@@ -289,7 +289,7 @@ function createPopup(object) {
     <p>${object.description}</p>
     <div class="btns-popup d-flex">
     <a href="${object.list[0].liveDemo}"><button type="button" class="btn-card d-flex flex-center"><span>${object.list[0].text}</span><img src="./images/icons/Icon-Export@2x.svg" alt=""></button></a>
-    <a href="${object.list[1].codeSource}"><button type="button" class="btn-card d-flex flex-center"><span>See Source</span><img src="./images/icons/Icon-GitHub-1.svg" alt=""></button></a>
+    <a href="${object.list[1].codeSource}"><button type="button" class="btn-card d-flex flex-center"><span>${object.list[1].text2}<img src="./images/icons/Icon-GitHub-1.svg" alt=""></button></a>
     </div>
   </div>
   </div>`;
@@ -314,11 +314,11 @@ four.forEach((li) => {
 // Add the id to a class of my buttons
 
 buttons.forEach((button) => {
-  // const currentModal = document.getElementById(button.classList[1]);
-  // console.log(currentModal);
+  const currentModal = document.getElementById(button.classList[1]);
   button.addEventListener('click', () => {
-    // currentModal.classList.add('active');
-    document.querySelector('.card-popup').classList.add('active');
+    // console.log(popupContainer);
+    currentModal.classList.add('active');
+    // document.querySelector('.card-popup').classList.add('active');
     popupContainer.style.visibility = 'visible';
     htmls.style.overflow = 'hidden';
 
