@@ -28,3 +28,45 @@ form.addEventListener('submit', (e) => {
     email.style.border = '1px solid #d0d9d4';
   }
 });
+
+const userName = document.getElementById('name');
+const userMsg = document.getElementById('msg');
+
+function readAndPrefill() {
+  const string = localStorage.getItem('dataStorage');
+  if (string) {
+    const storedObj = JSON.parse(string);
+    email.value = storedObj.enterName;
+    userName.value = storedObj.enterEmail;
+    userMsg.value = storedObj.enterMessage;
+    return storedObj;
+  }
+  return '';
+}
+
+const input = {
+  enterEmail: readAndPrefill().enterEmail,
+  enterName: readAndPrefill().enterName,
+  enterMessage: readAndPrefill().enterMessage,
+};
+
+function storeInput() {
+  if (localStorage.getItem('dataStorage') !== JSON.stringify(input)) {
+    localStorage.setItem('dataStorage', JSON.stringify(input));
+  }
+}
+
+email.addEventListener('change', (e) => {
+  input.enterEmail = e.target.value;
+  storeInput();
+});
+userName.addEventListener('change', (e) => {
+  input.enterName = e.target.value;
+  storeInput();
+});
+userMsg.addEventListener('change', (e) => {
+  input.enterMessage = e.target.value;
+  storeInput();
+});
+
+readAndPrefill();

@@ -244,11 +244,14 @@ projects.forEach((project) => {
   cardContainer.appendChild(card);
 });
 
+// Implementing the Popup Window dynamically
+
 function createPopup(object) {
   const popupCard = document.createElement('div');
   popupCard.classList.add('card-popup');
   popupCard.id = object.id;
   popupCard.innerHTML = `
+  <div class="fixed">
   <div class="project-img">
   <img class="card-img" src="${object.images.img}" alt="${object.images.altText}">
     <img class="hide-icon" src="./images/icons/Disabled.svg" alt="close icon">
@@ -269,6 +272,7 @@ function createPopup(object) {
       <button type="button" class="btn-card d-flex flex-center"><span>See Live</span><img src="./images/icons/Icon-Export@2x.svg" alt=""></button>
       <button type="button" class="btn-card d-flex flex-center"><span>See Source</span><img src="./images/icons/Icon-GitHub-1.svg" alt=""></button>
     </div>
+  </div>
   </div>`;
   return popupCard;
 }
@@ -282,21 +286,41 @@ projects.forEach((project) => {
 
 const buttons = document.querySelectorAll('li.card .btn-card');
 const closeButtons = document.querySelectorAll('.card-popup .hide-icon');
+const four = document.querySelectorAll('.card-popup .program-lang li:nth-child(4)');
+
+four.forEach((li) => {
+  li.style.display = 'none';
+});
+
+// Add the id to a class of my buttons
 
 buttons.forEach((button) => {
-  const currentModal = document.getElementById(button.classList[1]);
+  // const currentModal = document.getElementById(button.classList[1]);
+  // console.log(currentModal);
   button.addEventListener('click', () => {
-    popupContainer.style.display = 'flex';
-    currentModal.classList.add('active');
+    // currentModal.classList.add('active');
+    document.querySelector('.card-popup').classList.add('active');
+    popupContainer.style.visibility = 'visible';
     htmls.style.overflow = 'hidden';
+
+    const popAnimation = popupContainer.querySelector('.card-popup');
+    popAnimation.classList.add('inActive');
+    setTimeout(() => {
+      popAnimation.classList.remove('inActive');
+    }, 1000);
   });
 });
 
 closeButtons.forEach((closeBtn) => {
   closeBtn.addEventListener('click', () => {
-  // const activePopup = document.querySelector('.card-popup.active');
-    document.querySelector('.card-popup.active').classList.remove('active');
-    popupContainer.style.display = 'none';
-    htmls.style.overflow = 'auto';
+    const popAnimation = popupContainer.querySelector('.card-popup');
+    popAnimation.classList.add('outActive');
+    // console.log(popAnimation);
+    setTimeout(() => {
+      document.querySelector('.card-popup.active').classList.remove('active');
+      popAnimation.classList.remove('outActive');
+      popupContainer.style.visibility = 'hidden';
+      htmls.style.overflow = 'auto';
+    }, 1000);
   });
 });
