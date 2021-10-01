@@ -7,14 +7,14 @@ const projects = [
   {
     id: 'project_1',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile1@2x.png',
+      // img: './images/Snapshoot-Portfolio-mobile1@2x.png',
+      img: './images/Project_1.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 1 preview image',
     },
-    name: 'Multi-Post Stories Gain+Glory_1',
-    heading: 'Keeping track of hundreds of components_1',
+    name: 'CLOUDFLARE MERKLE TOWN',
+    heading: 'CLOUDFLARE MERKLE TOWN',
     languages: [
-      'Ruby on Rails',
       'Css',
       'JavaScript',
       'html',
@@ -27,30 +27,34 @@ const projects = [
       'Terminal',
       'Codepen',
     ],
+
     // button: 'See Project',
-    description: 'Project_1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description: 'Cloudflare has more than 50+ experienced designers and JS developers on board, we build custom digital products for forward - thinking enterprises and startups. With the main office based in Warsaw (Poland), we also operate in different locations, including the United States and the United Kingdom.',
     list: [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
+        liveDemo: 'https://benmukebo.github.io/Capstone_Project_One/'
       },
       {
         text: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
+        codeSource: 'https://github.com/BenMukebo/Capstone_Project_One'
       },
     ],
   },
   {
     id: 'project_2',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile2@2x.png',
+      // img: './images/Snapshoot-Portfolio-mobile2@2x.png',
+      img: './images/Project_2.png',
+
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 2 preview image',
     },
-    name: 'Multi-Post Stories Gain+Glory_2',
-    heading: 'Keeping track of hundreds of components_2',
+    name: 'ShapelyDemo',
+    heading: 'ShapelyDemo',
     languages: [
-      'Ruby on Rails',
       'Css',
       'JavaScript',
       'html',
@@ -64,22 +68,26 @@ const projects = [
       'Codepen',
     ],
     // button: 'See Project',
-    description: 'Project_2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description: '"Shapely" is a powerful and versatile one-page WordPress theme with pixel-perfect design and outstanding functionality. It is by far the most advanced free WordPress theme available today with loads of unmatched customization options.',
     list: [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
+        liveDemo: 'https://benmukebo.github.io/ShapelyDemo/'
       },
       {
         text: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
+        codeSource: 'https://github.com/BenMukebo/ShapelyDemo'
+
       },
     ],
   },
   {
     id: 'project_3',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile@3x.png',
+      // img: './images/Snapshoot-Portfolio-mobile@3x.png',
+      img: './images/Snapshoot-Portfolio-mobile6@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 3 preview image',
     },
@@ -105,17 +113,20 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
+        liveDemo: ''
       },
       {
         text: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
+        codeSource: ''
       },
     ],
   },
   {
     id: 'project_4',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile4@2x.png',
+      // img: './images/Snapshoot-Portfolio-mobile4@2x.png',
+      img: './images/Snapshoot-Portfolio-mobile@3x.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 4 preview image',
     },
@@ -141,17 +152,20 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
+        liveDemo: ''
       },
       {
         text: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
+        codeSource: ''
       },
     ],
   },
   {
     id: 'project_5',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile5@2x.png',
+      // img: './images/Snapshoot-Portfolio-mobile5@2x.png',
+      img: './images/Snapshoot-Portfolio-mobile2@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 5 preview image',
     },
@@ -177,17 +191,20 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
+        liveDemo: ''
       },
       {
         text: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
+        codeSource: ''
       },
     ],
   },
   {
     id: 'project_6',
     images: {
-      img: './images/Snapshoot-Portfolio-mobile6@2x.png',
+      // img: './images/Snapshoot-Portfolio-mobile6@2x.png',
+      img: './images/Snapshoot-Portfolio-mobile1@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 6 preview image',
     },
@@ -213,10 +230,12 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
+        liveDemo: ''
       },
       {
         text: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
+        codeSource: ''
       },
     ],
   },
@@ -269,8 +288,8 @@ function createPopup(object) {
     </ul>
     <p>${object.description}</p>
     <div class="btns-popup d-flex">
-      <button type="button" class="btn-card d-flex flex-center"><span>See Live</span><img src="./images/icons/Icon-Export@2x.svg" alt=""></button>
-      <button type="button" class="btn-card d-flex flex-center"><span>See Source</span><img src="./images/icons/Icon-GitHub-1.svg" alt=""></button>
+    <a href="${object.list[0].liveDemo}"><button type="button" class="btn-card d-flex flex-center"><span>${object.list[0].text}</span><img src="./images/icons/Icon-Export@2x.svg" alt=""></button></a>
+    <a href="${object.list[1].codeSource}"><button type="button" class="btn-card d-flex flex-center"><span>See Source</span><img src="./images/icons/Icon-GitHub-1.svg" alt=""></button></a>
     </div>
   </div>
   </div>`;
@@ -278,8 +297,8 @@ function createPopup(object) {
 }
 
 projects.forEach((project) => {
-  const popupCard = createPopup(project);
-  popupContainer.appendChild(popupCard);
+  const popupCards = createPopup(project);
+  popupContainer.appendChild(popupCards);
 });
 
 // Toggle PopUp window
