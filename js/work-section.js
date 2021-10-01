@@ -34,12 +34,12 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: 'https://benmukebo.github.io/Capstone_Project_One/'
+        liveDemo: 'https://benmukebo.github.io/Capstone_Project_One/',
       },
       {
         text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: 'https://github.com/BenMukebo/Capstone_Project_One'
+        codeSource: 'https://github.com/BenMukebo/Capstone_Project_One',
       },
     ],
   },
@@ -73,12 +73,12 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: 'https://benmukebo.github.io/ShapelyDemo/'
+        liveDemo: 'https://benmukebo.github.io/ShapelyDemo/',
       },
       {
         text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: 'https://github.com/BenMukebo/ShapelyDemo'
+        codeSource: 'https://github.com/BenMukebo/ShapelyDemo',
 
       },
     ],
@@ -113,12 +113,12 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: ''
+        liveDemo: '',
       },
       {
         text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: ''
+        codeSource: '',
       },
     ],
   },
@@ -152,12 +152,12 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: ''
+        liveDemo: '',
       },
       {
         text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: ''
+        codeSource: '',
       },
     ],
   },
@@ -191,12 +191,12 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: ''
+        liveDemo: '',
       },
       {
         text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: ''
+        codeSource: '',
       },
     ],
   },
@@ -230,12 +230,12 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: ''
+        liveDemo: '',
       },
       {
         text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: ''
+        codeSource: '',
       },
     ],
   },

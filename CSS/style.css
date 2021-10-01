@@ -79,6 +79,10 @@ nav .nav-menu {
   transform: translateY(-100%);
 }
 
+.btns-popup a {
+  text-decoration: none;
+}
+
 footer .mail-container a {
   margin: 3em 0 147px;
   color: #42526e;
@@ -374,10 +378,6 @@ article {
   padding: 0;
   margin: 0;
   z-index: 5;
-}
-
-.btns-popup a {
-  text-decoration: none;
 }
 
 .inActive {
