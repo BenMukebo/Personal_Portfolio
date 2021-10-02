@@ -823,6 +823,7 @@ footer::after {
     padding: 10px 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px;
+    grid-auto-rows: 472px;
     margin: 0 auto;
     text-align: center;
   }
@@ -830,6 +831,7 @@ footer::after {
   .card-container .card,
   .card-wrapper .cards {
     width: 327px;
+    height: 472px;
     align-self: center;
     justify-self: center;
   }
