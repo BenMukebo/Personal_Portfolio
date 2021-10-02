@@ -4,13 +4,13 @@
 
 ## Description 
 
->  Mobile version screenshot.
+| Mobile version screenshot.|
+|---------------------------------------|
+|![screenshot](./images/screenshot.png/)|
 
-![screenshot](./images/screenshot.png/)
-
->  Desktop version screenshot.
-
-![screenshot](./images/screenshot2.png)
+| Desktop version screenshot. |
+|---------------------------------------|
+|![screenshot](./images/screenshot2.png)|
 
 > The main goal for this project is to: 
 
@@ -31,6 +31,7 @@
 - Use client-side validation to catch and throw errors in the UI.
 - Build a personal portfolio site.
 - Use local storage to save user input.
+- Add a new project to your portfolio
 
 ## Built With
 
@@ -83,6 +84,20 @@ For tracking linter errors locally you need to follow these steps:
 - Twitter: [@BenMukebo](https://twitter.com/BenMukebo)
 - LinkedIn: [Kasongo Mukebo Ben](https://www.linkedin.com/in/kasongo-mukebo-ben-591720205/)
 
+## 🤝 Contributors
+
+👤 **fobadara**
+
+- GitHub: [@fobadara](https://github.com/fobadara)
+
+👤 **Radmila S.**
+
+- GitHub: [@M0rrighan](https://github.com/M0rrighan)
+
+👤 **Gentilitysp**
+
+- GitHub: [@Gentilitysp](https://github.com/Gentilitysp)
+
 
 ## 🤝 Contributing
 
@@ -99,7 +114,7 @@ Give a ⭐️ if you like this project!
 - Hat tip to Figma for their templates
 - Hat tip to [Microvers](www.microverse.org) curriculum and all the team 
 - Thanks to Code Reviewers
-- Thanks to My coding Partners 
+- Thanks to My coding Partners
 - Thanks to My Morning-session-group Partners and
 - Thanks to My standup-team Partners
   
