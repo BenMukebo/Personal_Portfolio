@@ -88,15 +88,15 @@ For tracking linter errors locally you need to follow these steps:
 
 👤 **fobadara**
 
-- GitHub: [@fobadara](https://github.com/fobadara)
+- [GitHub](https://github.com/fobadara)
 
 👤 **Radmila S.**
 
-- GitHub: [@M0rrighan](https://github.com/M0rrighan)
+- [GitHub](https://github.com/M0rrighan)
 
 👤 **Gentilitysp**
 
-- GitHub: [@Gentilitysp](https://github.com/Gentilitysp)
+- [GitHub](https://github.com/Gentilitysp)
 
 
 ## 🤝 Contributing
