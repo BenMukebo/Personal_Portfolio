@@ -289,13 +289,12 @@ function createPopup(object) {
     <p>${object.description}</p>
     <div class="btns-popup d-flex">
     <a href="${object.list[0].liveDemo}"><button type="button" class="btn-card d-flex flex-center"><span>${object.list[0].text}</span><img src="./images/icons/Icon-Export@2x.svg" alt=""></button></a>
-    <a href="${object.list[1].codeSource}"><button type="button" class="btn-card d-flex flex-center"><span>${object.list[1].text2}<img src="./images/icons/Icon-GitHub-1.svg" alt=""></button></a>
+    <a href="${object.list[1].codeSource}"><button type="button" class="btn-card d-flex flex-center"><span>${object.list[1].text2}</span><img src="./images/icons/Icon-GitHub-1.svg" alt=""></button></a>
     </div>
   </div>
   </div>`;
   return popupCard;
 }
-
 
 // Toggle PopUp window
 
@@ -308,12 +307,7 @@ four.forEach((li) => {
 
 projects.forEach((project) => {
   buttons.forEach((button) => {
-    const btnID = button.id;
     button.addEventListener('click', () => {
-      console.log('id: ', btnID, 'ID', project.id);
-      // const newProjects = projects.filter((project) => project.id === btnID);
-      // console.log(newProjects);
-      // createPopup(newProjects);
       if (project.id === button.id) {
         const popupCard = createPopup(project);
         popupContainer.appendChild(popupCard);
