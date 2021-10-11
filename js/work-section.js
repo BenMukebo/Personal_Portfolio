@@ -12,7 +12,7 @@ const projects = [
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 1 preview image',
     },
-    name: 'CLOUDFLARE MERKLE TOWN',
+    name: 'CLOUDFLARE',
     heading: 'CLOUDFLARE MERKLE TOWN',
     languages: [
       'CSS',
@@ -97,7 +97,6 @@ const projects = [
       'SCSS',
       'JavaScript',
       'HTML',
-      'APIs',
     ],
     technologies: [
       'Codekit',
