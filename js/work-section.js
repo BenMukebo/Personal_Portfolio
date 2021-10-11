@@ -254,7 +254,7 @@ function createCard(cardObject) {
   ${cardObject.languages.map((lang) => `<li>
    ${lang}</li>`).join('')}
  </ul>
-  <button type="button" class="btn-card ${cardObject.id}">See Project</button>`;
+  <button type="button" class="btn-card ${cardObject.id}" id="${cardObject.id}">See Project</button>`;
   return li;
 }
 
@@ -296,50 +296,59 @@ function createPopup(object) {
   return popupCard;
 }
 
-projects.forEach((project) => {
-  const popupCards = createPopup(project);
-  popupContainer.appendChild(popupCards);
-});
 
 // Toggle PopUp window
 
 const buttons = document.querySelectorAll('li.card .btn-card');
-const closeButtons = document.querySelectorAll('.card-popup .hide-icon');
 const four = document.querySelectorAll('.card-popup .program-lang li:nth-child(4)');
 
 four.forEach((li) => {
   li.style.display = 'none';
 });
 
-// Add the id to a class of my buttons
+projects.forEach((project) => {
+  buttons.forEach((button) => {
+    const btnID = button.id;
+    button.addEventListener('click', () => {
+      console.log('id: ', btnID, 'ID', project.id);
+      // const newProjects = projects.filter((project) => project.id === btnID);
+      // console.log(newProjects);
+      // createPopup(newProjects);
+      if (project.id === button.id) {
+        const popupCard = createPopup(project);
+        popupContainer.appendChild(popupCard);
 
-buttons.forEach((button) => {
-  const currentModal = document.getElementById(button.classList[1]);
-  button.addEventListener('click', () => {
-    // console.log(popupContainer);
-    currentModal.classList.add('active');
-    // document.querySelector('.card-popup').classList.add('active');
-    popupContainer.style.visibility = 'visible';
-    htmls.style.overflow = 'hidden';
+        // Show the popup window
 
-    const popAnimation = popupContainer.querySelector('.card-popup');
-    popAnimation.classList.add('inActive');
-    setTimeout(() => {
-      popAnimation.classList.remove('inActive');
-    }, 1000);
-  });
-});
+        document.querySelector('.card-popup').classList.add('active');
+        popupContainer.style.visibility = 'visible';
+        htmls.style.overflow = 'hidden';
 
-closeButtons.forEach((closeBtn) => {
-  closeBtn.addEventListener('click', () => {
-    const popAnimation = popupContainer.querySelector('.card-popup');
-    popAnimation.classList.add('outActive');
-    // console.log(popAnimation);
-    setTimeout(() => {
-      document.querySelector('.card-popup.active').classList.remove('active');
-      popAnimation.classList.remove('outActive');
-      popupContainer.style.visibility = 'hidden';
-      htmls.style.overflow = 'auto';
-    }, 1000);
+        const popAnimation = popupContainer.querySelector('.card-popup');
+        popAnimation.classList.add('inActive');
+        setTimeout(() => {
+          popAnimation.classList.remove('inActive');
+        }, 1000);
+
+        const closeBtn = document.querySelector('.card-popup .hide-icon');
+
+        // Hide the popup window
+
+        closeBtn.addEventListener('click', () => {
+          const popAnimation = popupContainer.querySelector('.card-popup');
+          popAnimation.classList.add('outActive');
+          // console.log(popAnimation);
+          setTimeout(() => {
+            document.querySelector('.card-popup.active').classList.remove('active');
+            popAnimation.classList.remove('outActive');
+            popupContainer.style.visibility = 'hidden';
+            htmls.style.overflow = 'auto';
+          }, 1000);
+          setTimeout(() => {
+            popupContainer.innerHTML = '';
+          }, 1000);
+        });
+      }
+    });
   });
 });
