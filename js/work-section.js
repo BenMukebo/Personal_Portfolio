@@ -46,8 +46,84 @@ const projects = [
   {
     id: 'project_2',
     images: {
-      // img: './images/Snapshoot-Portfolio-mobile2@2x.png',
       img: './images/Project_2.png',
+      // img: './images/Snapshoot-Portfolio-mobile6@2x.png',
+      cancelPop: './images/icons/Disabled@2x.png',
+      altText: 'project 3 preview image',
+    },
+    name: 'Leaderboard',
+    heading: 'Leaderboard',
+    languages: [
+      'SCSS',
+      'JavaScript',
+      'HTML',
+    ],
+    technologies: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Apis',
+      'Terminal',
+      'Codepen',
+    ],
+    // button: 'See Project',
+    description: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.',
+    list: [
+      {
+        text: 'See Live',
+        icon: './images/icons/Icon-Export@2x.svg',
+        liveDemo: 'https://thirsty-montalcini-8d768c.netlify.app',
+      },
+      {
+        text2: 'See Source',
+        icon: './images/icons/Icon-GitHub-1.svg',
+        codeSource: 'https://github.com/BenMukebo/Leaderboard',
+      },
+    ],
+  },
+  {
+    id: 'project_3',
+    images: {
+      // img: './images/Snapshoot-Portfolio-mobile4@2x.png',
+      // img: './images/Snapshoot-Portfolio-mobile@3x.png',
+      img: './images/Project_3.png',
+      cancelPop: './images/icons/Disabled@2x.png',
+      altText: 'project 4 preview image',
+    },
+    name: 'Math magicians',
+    heading: 'Math magicians',
+    languages: [
+      'React',
+      'Redux',
+    ],
+    technologies: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Jest',
+    ],
+    // button: 'See Project',
+    description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and Read a random math-related quote.',
+    list: [
+      {
+        text: 'See Live',
+        icon: './images/icons/Icon-Export@2x.svg',
+        liveDemo: 'https://inspiring-noyce-cafdc0.netlify.app',
+      },
+      {
+        text2: 'See Source',
+        icon: './images/icons/Icon-GitHub-1.svg',
+        codeSource: 'https://github.com/BenMukebo/Math-magicians',
+      },
+    ],
+  },
+  {
+    id: 'project_4',
+    images: {
+      // img: './images/Snapshoot-Portfolio-mobile2@2x.png',
+      img: './images/Project_4.png',
 
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 2 preview image',
@@ -80,82 +156,6 @@ const projects = [
         icon: './images/icons/Icon-GitHub-1.svg',
         codeSource: 'https://github.com/BenMukebo/ShapelyDemo',
 
-      },
-    ],
-  },
-  {
-    id: 'project_3',
-    images: {
-      img: './images/Project_3.png',
-      // img: './images/Snapshoot-Portfolio-mobile6@2x.png',
-      cancelPop: './images/icons/Disabled@2x.png',
-      altText: 'project 3 preview image',
-    },
-    name: 'Leaderboard',
-    heading: 'Leaderboard',
-    languages: [
-      'SCSS',
-      'JavaScript',
-      'HTML',
-    ],
-    technologies: [
-      'Codekit',
-      'GitHub',
-      'Javascript',
-      'Bootstrap',
-      'Terminal',
-      'Codepen',
-    ],
-    // button: 'See Project',
-    description: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.',
-    list: [
-      {
-        text: 'See Live',
-        icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: 'https://thirsty-montalcini-8d768c.netlify.app',
-      },
-      {
-        text2: 'See Source',
-        icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: 'https://github.com/BenMukebo/Leaderboard',
-      },
-    ],
-  },
-  {
-    id: 'project_4',
-    images: {
-      // img: './images/Snapshoot-Portfolio-mobile4@2x.png',
-      // img: './images/Snapshoot-Portfolio-mobile@3x.png',
-      img: './images/Project_4.png',
-      cancelPop: './images/icons/Disabled@2x.png',
-      altText: 'project 4 preview image',
-    },
-    name: 'Math magicians',
-    heading: 'Math magicians',
-    languages: [
-      'React',
-      'Redux',
-    ],
-    technologies: [
-      'Codekit',
-      'GitHub',
-      'Javascript',
-      'Bootstrap',
-      'Terminal',
-      'Codepen',
-    ],
-    // button: 'See Project',
-    description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and Read a random math-related quote.',
-    list: [
-      {
-        text: 'See Live',
-        icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: 'https://inspiring-noyce-cafdc0.netlify.app',
-      },
-      {
-        text2: 'See Source',
-        icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: 'https://github.com/BenMukebo/Math-magicians',
       },
     ],
   },
