@@ -46,7 +46,10 @@
 
 ## Live Demo
 
-[Live Demo Link](https://benmukebo.github.io/Personal_Portfolio/)
+<!-- [Live Demo Link](https://benmukebo.github.io/Personal_Portfolio/) -->
+
+
+[Live Demo Link](https://laughing-rosalind-98e585.netlify.app)
 
 ## Getting Started
 
