@@ -62,7 +62,7 @@ const projects = [
       'Codekit',
       'GitHub',
       'Javascript',
-      'Apis',
+      'Rest Apis',
       'Terminal',
       'Codepen',
     ],
