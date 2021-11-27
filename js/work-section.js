@@ -160,7 +160,8 @@ const projects = [
     id: 'project_5',
     images: {
       // img: './images/Snapshoot-Portfolio-mobile5@2x.png',
-      img: './images/Snapshoot-Portfolio-mobile2@2x.png',
+      // img: './images/Snapshoot-Portfolio-mobile2@2x.png',
+      img: './images/Project_5.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 5 preview image',
     },
@@ -186,12 +187,12 @@ const projects = [
       {
         text: 'See Live',
         icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: '',
+        liveDemo: 'https://benmukebo-covid-19-data.herokuapp.com/',
       },
       {
         text2: 'See Source',
         icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: '',
+        codeSource: 'git clone git@github.com:BenMukebo/covid-19-data',
       },
     ],
   },
