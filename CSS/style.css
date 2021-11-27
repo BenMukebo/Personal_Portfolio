@@ -169,7 +169,7 @@ ul {
 }
 
 .main-section-title {
-  padding-top: 64px;
+  padding-top: 54px;
   animation: top-bottom 1s ease-in-out;
 }
 
@@ -189,7 +189,7 @@ ul {
 
 .main-section p {
   max-width: 90%;
-  margin: 58px auto 60px;
+  margin: 50px auto 52px;
   color: var(--primary);
   font-size: 20px;
   line-height: 28px;
