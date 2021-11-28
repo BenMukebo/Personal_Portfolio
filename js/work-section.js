@@ -93,7 +93,7 @@ const projects = [
     heading: 'Math magicians',
     languages: [
       'React',
-      'Redux',
+      'Scss.module',
     ],
     technologies: [
       'Codekit',
@@ -168,18 +168,16 @@ const projects = [
     name: 'Covid_19_data',
     heading: 'Covid_19_data ',
     languages: [
-      'Ruby on Rails',
-      'Css',
-      'JavaScript',
-      'html',
+      'React',
+      'Redux',
     ],
     technologies: [
       'Codekit',
       'GitHub',
-      'Javascript',
-      'Bootstrap',
       'Terminal',
-      'Codepen',
+      'Api',
+      'Jest Testing',
+      'Heroku',
     ],
     // button: 'See Project',
     description: 'Covid 19 Data is a tracking site that provides the necessary information on covid 19 cases in any African country and their update',
