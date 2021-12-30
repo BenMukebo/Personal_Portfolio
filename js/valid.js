@@ -1,5 +1,8 @@
 const form = document.getElementById('form');
 const email = document.getElementById('mail');
+const nameInput = document.getElementById('name');
+const messageInput = document.getElementById('msg');
+
 const alertParent = document.querySelector('.btn-submit-alert');
 const alertMsg = document.createElement('p');
 alertParent.appendChild(alertMsg);
@@ -28,9 +31,6 @@ form.addEventListener('submit', (e) => {
     email.style.border = '1px solid #d0d9d4';
   }
 });
-
-const userName = document.getElementById('name');
-const userMsg = document.getElementById('msg');
 
 // function readAndPrefill() {
 //   const string = localStorage.getItem('dataStorage');
@@ -80,8 +80,22 @@ const userMsg = document.getElementById('msg');
 
 form.addEventListener('input', (e) => {
   const input = {
-    enterName: email.value,
-    enterMessage: userName.value,
-    enterMessage: userMsg.value
+    enterName: nameInput.value,
+    enterEmail: email.value,
+    enterMessage: messageInput.value
   };
-}
+  localStorage.setItem('dataStorage', JSON.stringify(input));
+});
+
+let savedDataStorage = localStorage.getItem('dataStorage');
+savedDataStorage = JSON.parse(savedDataStorage);
+
+  window.onload = () => {
+    console.log(savedDataStorage)
+    if (savedDataStorage) {
+      nameInput.value = savedDataStorage.enterName,
+      email.value = savedDataStorage.enterEmail,
+      messageInput.value = savedDataStorage.enterMessage
+    }
+  };
+
