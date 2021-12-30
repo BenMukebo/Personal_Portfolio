@@ -32,11 +32,11 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-form.addEventListener('input', (e) => {
+form.addEventListener('input', () => {
   const input = {
     enterName: nameInput.value,
     enterEmail: email.value,
-    enterMessage: messageInput.value
+    enterMessage: messageInput.value,
   };
   localStorage.setItem('dataStorage', JSON.stringify(input));
 });
@@ -44,12 +44,10 @@ form.addEventListener('input', (e) => {
 let savedDataStorage = localStorage.getItem('dataStorage');
 savedDataStorage = JSON.parse(savedDataStorage);
 
-  window.onload = () => {
-    console.log(savedDataStorage)
-    if (savedDataStorage) {
-      nameInput.value = savedDataStorage.enterName,
-      email.value = savedDataStorage.enterEmail,
-      messageInput.value = savedDataStorage.enterMessage
-    }
-  };
-
+window.onload = () => {
+  if (savedDataStorage) {
+    nameInput.value = savedDataStorage.enterName;
+    email.value = savedDataStorage.enterEmail;
+    messageInput.value = savedDataStorage.enterMessage;
+  }
+};
