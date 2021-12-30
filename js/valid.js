@@ -32,52 +32,6 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// function readAndPrefill() {
-//   const string = localStorage.getItem('dataStorage');
-//   if (string) {
-//     const storedObj = JSON.parse(string);
-//     email.value = storedObj.enterName;
-//     userName.value = storedObj.enterEmail;
-//     userMsg.value = storedObj.enterMessage;
-//     return storedObj;
-//   }
-//   return '';
-// }
-
-// const input = {
-//   enterName: readAndPrefill().enterName,
-//   enterEmail: readAndPrefill().enterEmail,
-//   enterMessage: readAndPrefill().enterMessage,
-// };
-
-// function storeInput() {
-//   if (localStorage.getItem('dataStorage') !== JSON.stringify(input)) {
-//     localStorage.setItem('dataStorage', JSON.stringify(input));
-//   }
-// }
-
-// userName.addEventListener('change', (e) => {
-//   input.enterName = e.target.value;
-//   storeInput();
-// });
-// email.addEventListener('change', (e) => {
-//   input.enterEmail = e.target.value;
-//   storeInput();
-// });
-// userMsg.addEventListener('change', (e) => {
-//   input.enterMessage = e.target.value;
-//   storeInput();
-// });
-
-// readAndPrefill();
-
-
-// userMsg.addEventListener('change', (e) => {
-//   input.enterMessage = e.target.value;
-//   storeInput();
-// });
-
-
 form.addEventListener('input', (e) => {
   const input = {
     enterName: nameInput.value,
