@@ -325,7 +325,7 @@ projects.forEach((project) => {
         closeBtn.addEventListener('click', () => {
           const popAnimation = popupContainer.querySelector('.card-popup');
           popAnimation.classList.add('outActive');
-          // console.log(popAnimation);
+
           setTimeout(() => {
             document.querySelector('.card-popup.active').classList.remove('active');
             popAnimation.classList.remove('outActive');
