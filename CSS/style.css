@@ -826,7 +826,7 @@ footer::after {
     padding: 10px 10px;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px;
-    grid-auto-rows: 472px;
+    grid-auto-rows: calc(472px * 1.05);
     margin: 0 auto;
     text-align: center;
   }
