@@ -95,7 +95,7 @@ const projects = [
     languages: [
       'React',
       'React-router',
-      'Scss.module',
+      'Scss',
     ],
     technologies: [
       'Codekit',
@@ -211,7 +211,6 @@ const projects = [
       'Ruby on Rails',
       'Ruby',
       'PostgreSQL',
-      'Css',
     ],
     technologies: [
       'Heroku',
