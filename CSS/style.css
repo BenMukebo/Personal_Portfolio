@@ -9,6 +9,7 @@ html {
   --h-color: #3a4a42;
   --secondary: #36b37e;
   --secondary-btn: #36b37f;
+  --over-color: #008552;
   --weight: bold;
   --background: #ebf0ee;
 }
@@ -183,6 +184,30 @@ ul {
   }
 }
 
+.main-section-title h1 {
+  animation-name: rainbow-text;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  color: transparent;
+  background: linear-gradient(60deg, #20bf55, #01baef, goldenrod, #0cbaba, #380036);
+  -webkit-background-clip: text;
+  background-size: 60% 10%;
+}
+
+@keyframes rainbow-text {
+  0%,
+  100% {
+    background-position: 0 0;
+    transform: scale(1);
+  }
+
+  50% {
+    background-position: 100% 0;
+    transform: scale(1.05);
+  }
+}
+
 .main-section-title h2 {
   color: var(--secondary);
 }
@@ -194,6 +219,10 @@ ul {
   font-size: 20px;
   line-height: 28px;
   animation: left-right 1s ease-in-out;
+}
+
+.main-section p:hover {
+  color: var(--over-color);
 }
 
 @keyframes left-right {
@@ -243,6 +272,12 @@ ul {
 
 .scroll-down-icon {
   margin: 64px 0 22px;
+  padding: 7px;
+}
+
+.scroll-down-icon img:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
 }
 
 .works-section {
@@ -341,7 +376,7 @@ button:hover {
 }
 
 button:active {
-  background-color: #008552;
+  background-color: var(--over-color);
 }
 
 /* Details Popup Window */
@@ -551,7 +586,7 @@ article {
 }
 
 .card-popup button:active {
-  background-color: #008552;
+  background-color: var(--over-color);
 }
 
 .about-section {
@@ -583,7 +618,7 @@ article {
 }
 
 .about button:active {
-  background-color: #008552;
+  background-color: var(--over-color);
 }
 
 .card-wrapper {
@@ -773,11 +808,11 @@ footer::after {
   }
 
   .nav-menu .nav-link:first-child a {
-    color: #008552;
+    color: var(--over-color);
   }
 
   .nav-menu .nav-link a:hover {
-    color: #008552;
+    color: var(--over-color);
     background-color: #f4f4f4;
   }
 

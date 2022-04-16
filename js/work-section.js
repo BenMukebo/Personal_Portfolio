@@ -95,7 +95,7 @@ const projects = [
     languages: [
       'React',
       'React-router',
-      'Scss',
+      'SCSS',
     ],
     technologies: [
       'Codekit',
@@ -295,11 +295,11 @@ function createPopup(object) {
 // Toggle PopUp window
 
 const buttons = document.querySelectorAll('li.card .btn-card');
-const four = document.querySelectorAll('.card-popup .program-lang li:nth-child(4)');
+// const four = document.querySelectorAll('.card-popup .program-lang li:nth-child(4)');
 
-four.forEach((li) => {
-  li.style.display = 'none';
-});
+// four.forEach((li) => {
+//   li.style.display = 'none';
+// });
 
 projects.forEach((project) => {
   buttons.forEach((button) => {
