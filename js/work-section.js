@@ -29,7 +29,7 @@ const projects = [
     ],
 
     // button: 'See Project',
-    description: 'Cloudflare has more than 50+ experienced designers and JS developers on board, we build custom digital products for forward - thinking enterprises and startups. With the main office based in Warsaw (Poland), we also operate in different locations, including the United States and the United Kingdom.',
+    description: 'Cloudflare is a website for a software development company that builds custom digital products for forward-thinking enterprises and startups.',
     list: [
       {
         text: 'See Live',
@@ -66,8 +66,7 @@ const projects = [
       'Terminal',
       'Netlify',
     ],
-    // button: 'See Project',
-    description: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.',
+    description: 'The Leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved to the external Leaderboard API service.',
     list: [
       {
         text: 'See Live',
@@ -95,7 +94,6 @@ const projects = [
     languages: [
       'React',
       'React-router',
-      'SCSS',
     ],
     technologies: [
       'Codekit',
@@ -104,8 +102,7 @@ const projects = [
       'Terminal',
       'Jest Testing',
     ],
-    // button: 'See Project',
-    description: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and Read a random math-related quote.',
+    description: 'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read random math-related quotes.',
     list: [
       {
         text: 'See Live',
@@ -142,7 +139,6 @@ const projects = [
       'Terminal',
       'Git',
     ],
-    // button: 'See Project',
     description: '"Shapely" is a powerful and versatile one-page WordPress theme with pixel-perfect design and outstanding functionality. It is by far the most advanced free WordPress theme available today with loads of unmatched customization options.',
     list: [
       {
@@ -182,8 +178,7 @@ const projects = [
       'Jest Testing',
       'Heroku',
     ],
-    // button: 'See Project',
-    description: 'Covid 19 Data is a tracking site that provides the necessary information on covid 19 cases in any African country and their update',
+    description: 'COVID-19 Data is a tracking site that provides the necessary information on COVID-19 cases in any African country and their updates.',
     list: [
       {
         text: 'See Live',
@@ -220,8 +215,7 @@ const projects = [
       'Terminal',
       'Codepen',
     ],
-    // button: 'See Project',
-    description: 'Budgy-Budget is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    description: 'Budgy-Budget is a mobile web application where you can manage your budget. You have a list of transactions associated with a category so that you can see how much money you spent and on what.',
     list: [
       {
         text: 'See Live',
@@ -295,11 +289,11 @@ function createPopup(object) {
 // Toggle PopUp window
 
 const buttons = document.querySelectorAll('li.card .btn-card');
-// const four = document.querySelectorAll('.card-popup .program-lang li:nth-child(4)');
+const four = document.querySelectorAll('.card-popup .program-lang li:nth-child(4)');
 
-// four.forEach((li) => {
-//   li.style.display = 'none';
-// });
+four.forEach((li) => {
+  li.style.display = 'none';
+});
 
 projects.forEach((project) => {
   buttons.forEach((button) => {
