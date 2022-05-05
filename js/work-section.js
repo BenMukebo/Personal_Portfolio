@@ -7,7 +7,6 @@ const projects = [
   {
     id: 'project_1',
     images: {
-      // img: './images/Snapshoot-Portfolio-mobile1@2x.png',
       img: './images/Project_1.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 1 preview image',
@@ -47,7 +46,6 @@ const projects = [
     id: 'project_2',
     images: {
       img: './images/Project_2.png',
-      // img: './images/Snapshoot-Portfolio-mobile6@2x.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 3 preview image',
     },
@@ -83,85 +81,9 @@ const projects = [
   {
     id: 'project_3',
     images: {
-      // img: './images/Snapshoot-Portfolio-mobile4@2x.png',
-      // img: './images/Snapshoot-Portfolio-mobile@3x.png',
       img: './images/Project_3.png',
       cancelPop: './images/icons/Disabled@2x.png',
-      altText: 'project 4 preview image',
-    },
-    name: 'Math magicians',
-    heading: 'Math magicians',
-    languages: [
-      'React',
-      'React-router',
-    ],
-    technologies: [
-      'Codekit',
-      'GitHub',
-      'Netlify',
-      'Terminal',
-      'Jest Testing',
-    ],
-    description: 'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read random math-related quotes.',
-    list: [
-      {
-        text: 'See Live',
-        icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: 'https://benmukebo-math-magicians.netlify.app',
-      },
-      {
-        text2: 'See Source',
-        icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: 'https://github.com/BenMukebo/Math-magicians',
-      },
-    ],
-  },
-  {
-    id: 'project_4',
-    images: {
-      // img: './images/Snapshoot-Portfolio-mobile2@2x.png',
-      img: './images/Project_4.png',
-
-      cancelPop: './images/icons/Disabled@2x.png',
-      altText: 'project 2 preview image',
-    },
-    name: 'ShapelyDemo',
-    heading: 'ShapelyDemo',
-    languages: [
-      'SCSS',
-      'JavaScript',
-      'HTML',
-    ],
-    technologies: [
-      'Codekit',
-      'GitHub',
-      'Dom Manupulation',
-      'Terminal',
-      'Git',
-    ],
-    description: '"Shapely" is a powerful and versatile one-page WordPress theme with pixel-perfect design and outstanding functionality. It is by far the most advanced free WordPress theme available today with loads of unmatched customization options.',
-    list: [
-      {
-        text: 'See Live',
-        icon: './images/icons/Icon-Export@2x.svg',
-        liveDemo: 'https://benmukebo.github.io/ShapelyDemo/',
-      },
-      {
-        text2: 'See Source',
-        icon: './images/icons/Icon-GitHub-1.svg',
-        codeSource: 'https://github.com/BenMukebo/ShapelyDemo',
-
-      },
-    ],
-  },
-  {
-    id: 'project_5',
-    images: {
-      // img: './images/Snapshoot-Portfolio-mobile5@2x.png',
-      // img: './images/Snapshoot-Portfolio-mobile2@2x.png',
-      img: './images/Project_5.png',
-      cancelPop: './images/icons/Disabled@2x.png',
-      altText: 'project 5 preview image',
+      altText: 'project 3 preview image',
     },
     name: 'Covid_19_data',
     heading: 'Covid_19_data ',
@@ -193,9 +115,116 @@ const projects = [
     ],
   },
   {
+    id: 'project_4',
+    images: {
+      img: './images/Project_4.png',
+      cancelPop: './images/icons/Disabled@2x.png',
+      altText: 'project 4 preview image',
+    },
+    name: 'Math magicians',
+    heading: 'Math magicians',
+    languages: [
+      'React',
+      'React-router',
+    ],
+    technologies: [
+      'Codekit',
+      'GitHub',
+      'Netlify',
+      'Terminal',
+      'Jest Testing',
+    ],
+    description: 'Math Magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read random math-related quotes.',
+    list: [
+      {
+        text: 'See Live',
+        icon: './images/icons/Icon-Export@2x.svg',
+        liveDemo: 'https://benmukebo-math-magicians.netlify.app',
+      },
+      {
+        text2: 'See Source',
+        icon: './images/icons/Icon-GitHub-1.svg',
+        codeSource: 'https://github.com/BenMukebo/Math-magicians',
+      },
+    ],
+  },
+  // {
+  //   id: 'project_5',
+  //   images: {
+  //     // img: './images/Snapshoot-Portfolio-mobile2@2x.png',
+  //     img: './images/Project_4.png',
+
+  //     cancelPop: './images/icons/Disabled@2x.png',
+  //     altText: 'project 2 preview image',
+  //   },
+  //   name: 'ShapelyDemo',
+  //   heading: 'ShapelyDemo',
+  //   languages: [
+  //     'SCSS',
+  //     'JavaScript',
+  //     'HTML',
+  //   ],
+  //   technologies: [
+  //     'Codekit',
+  //     'GitHub',
+  //     'Dom Manupulation',
+  //     'Terminal',
+  //     'Git',
+  //   ],
+  //   description: '"Shapely" is a powerful and versatile one-page WordPress theme with pixel-perfect design and outstanding functionality. It is by far the most advanced free WordPress theme available today with loads of unmatched customization options.',
+  //   list: [
+  //     {
+  //       text: 'See Live',
+  //       icon: './images/icons/Icon-Export@2x.svg',
+  //       liveDemo: 'https://benmukebo.github.io/ShapelyDemo/',
+  //     },
+  //     {
+  //       text2: 'See Source',
+  //       icon: './images/icons/Icon-GitHub-1.svg',
+  //       codeSource: 'https://github.com/BenMukebo/ShapelyDemo',
+
+  //     },
+  //   ],
+  // },
+  {
+    id: 'project_5',
+    images: {
+      img: './images/Project_5.png',
+      cancelPop: './images/icons/Disabled@2x.png',
+      altText: 'project 5 preview image',
+    },
+    name: 'Book an appointment',
+    heading: 'Book an appointment app',
+    languages: [
+      'Ruby on Rails',
+      'React',
+      'Redux',
+    ],
+    technologies: [
+      'Codekit',
+      'GitHub',
+      'Terminal',
+      'Api',
+      'RSpec',
+      'Heroku',
+    ],
+    description: 'The project is based on an app to book an appointment with the doctor. Ruby on Rails, React, Redux, and PostgreSQL were used to create this site.',
+    list: [
+      {
+        text: 'See Live',
+        icon: './images/icons/Icon-Export@2x.svg',
+        liveDemo: 'https://frontend-doctor-api.herokuapp.com/',
+      },
+      {
+        text2: 'See Source',
+        icon: './images/icons/Icon-GitHub-1.svg',
+        codeSource: 'https://github.com/BenMukebo/book-an-appointment-front-end',
+      },
+    ],
+  },
+  {
     id: 'project_6',
     images: {
-      // img: './images/Snapshoot-Portfolio-mobile6@2x.png',
       img: './images/Project_6.png',
       cancelPop: './images/icons/Disabled@2x.png',
       altText: 'project 6 preview image',
