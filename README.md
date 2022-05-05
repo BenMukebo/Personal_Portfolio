@@ -4,13 +4,12 @@
 
 ## Description 
 
-| Mobile version screenshot.|
-|---------------------------------------|
-|![screenshot](./images/screenshot.png/)|
+Screenshots 📸
 
-| Desktop version screenshot. |
-|---------------------------------------|
-|![screenshot](./images/screenshot2.png)|
+| |              📱 💻 🖥️            | |
+|-|-------------------------------------|-|
+||![screenshot](./images/screenshot1.png)||
+
 
 > The main goal for this project is to: 
 
@@ -44,7 +43,7 @@
 - Git & GitHub
 
 
-## Live Demo
+## Live Demo 🔗
 
 <!-- [Live Demo Link](https://benmukebo.github.io/Personal_Portfolio/) -->
 
