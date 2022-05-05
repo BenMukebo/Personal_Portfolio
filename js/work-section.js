@@ -148,44 +148,6 @@ const projects = [
       },
     ],
   },
-  // {
-  //   id: 'project_5',
-  //   images: {
-  //     // img: './images/Snapshoot-Portfolio-mobile2@2x.png',
-  //     img: './images/Project_4.png',
-
-  //     cancelPop: './images/icons/Disabled@2x.png',
-  //     altText: 'project 2 preview image',
-  //   },
-  //   name: 'ShapelyDemo',
-  //   heading: 'ShapelyDemo',
-  //   languages: [
-  //     'SCSS',
-  //     'JavaScript',
-  //     'HTML',
-  //   ],
-  //   technologies: [
-  //     'Codekit',
-  //     'GitHub',
-  //     'Dom Manupulation',
-  //     'Terminal',
-  //     'Git',
-  //   ],
-  //   description: '"Shapely" is a powerful and versatile one-page WordPress theme with pixel-perfect design and outstanding functionality. It is by far the most advanced free WordPress theme available today with loads of unmatched customization options.',
-  //   list: [
-  //     {
-  //       text: 'See Live',
-  //       icon: './images/icons/Icon-Export@2x.svg',
-  //       liveDemo: 'https://benmukebo.github.io/ShapelyDemo/',
-  //     },
-  //     {
-  //       text2: 'See Source',
-  //       icon: './images/icons/Icon-GitHub-1.svg',
-  //       codeSource: 'https://github.com/BenMukebo/ShapelyDemo',
-
-  //     },
-  //   ],
-  // },
   {
     id: 'project_5',
     images: {
